@@ -266,7 +266,7 @@ $json-set: ();
 
       // Setup initial variables
       $local-important: map.get($utility-value, important);
-      
+
       $shorthand: map.get($utility-value, shorthand);
       $extra-selector: map.get($utility-value, extra-selector);
       $responsive: map.get($utility-value, responsive);
@@ -300,7 +300,7 @@ $json-set: ();
       // Standard class list
       $class-set: ();
       $pseudo-set: ();
-      
+
       @each $merged-variant, $merged-variant-value in $merged-variants {
         // Compile class name
         $compiled-class-name: null;
@@ -323,14 +323,14 @@ $json-set: ();
         @if meta.type-of($merged-variant-value) == map {
           @each $key, $value in $merged-variant-value {
             $map: (
-              #{$key}: $value #{if($important == true or $local-important == true, !important, null)}
+                    #{$key}: $value #{if($important == true or $local-important == true, !important, null)}
             );
             $merged-properties: map.merge($merged-properties, $map);
           }
         } @else {
           @each $property in $properties {
             $map: (
-              #{$property}: $merged-variant-value #{if($important == true or $local-important == true, !important, null)}
+                    #{$property}: $merged-variant-value #{if($important == true or $local-important == true, !important, null)}
             );
             $merged-properties: map.merge($merged-properties, $map);
           }
@@ -339,18 +339,18 @@ $json-set: ();
         $compiled-properties: map.merge($static-properties, $merged-properties);
 
         $map: (
-          '#{$compiled-class-name}': (
-            identifier: '#{$compiled-class-name}',
-            responsive: $responsive,
-            pseudos: $merged-pseudos,
-            selector: '.#{$compiled-class-name}#{$extra-selector}',
-            parent: null,
-            category: standard,
-            extra-selector: $extra-selector,
-            properties: (
-              $compiled-properties
-            )
-          )
+                '#{$compiled-class-name}': (
+                        identifier: '#{$compiled-class-name}',
+                        responsive: $responsive,
+                        pseudos: $merged-pseudos,
+                        selector: '.#{$compiled-class-name}#{$extra-selector}',
+                        parent: null,
+                        category: standard,
+                        extra-selector: $extra-selector,
+                        properties: (
+                                $compiled-properties
+                        )
+                )
         );
         $class-set: map.merge($class-set, $map);
 
@@ -359,58 +359,58 @@ $json-set: ();
           $compiled-pseudo-name: #{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name};
           @if $pseudo == group-hover {
             $map: (
-              '#{$compiled-pseudo-name}': (
-                selector: '.group:hover .#{$compiled-pseudo-name}#{$extra-selector}',
-                parent: '.#{$compiled-class-name}',
-                category: pseudo,
-                extra-selector: $extra-selector,
-                pseudo: group-hover,
-                properties: (
-                  $compiled-properties
-                )
-              )
+                    '#{$compiled-pseudo-name}': (
+                            selector: '.group:hover .#{$compiled-pseudo-name}#{$extra-selector}',
+                            parent: '.#{$compiled-class-name}',
+                            category: pseudo,
+                            extra-selector: $extra-selector,
+                            pseudo: group-hover,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
             );
             $pseudo-set: map.merge($pseudo-set, $map);
           } @else if $pseudo == group-focus {
             $map: (
-              '#{$compiled-pseudo-name}': (
-                selector: '.group:focus .#{$compiled-pseudo-name}#{$extra-selector}',
-                parent: '.#{$compiled-class-name}',
-                category: pseudo,
-                extra-selector: $extra-selector,
-                pseudo: group-focus,
-                properties: (
-                  $compiled-properties
-                )
-              )
+                    '#{$compiled-pseudo-name}': (
+                            selector: '.group:focus .#{$compiled-pseudo-name}#{$extra-selector}',
+                            parent: '.#{$compiled-class-name}',
+                            category: pseudo,
+                            extra-selector: $extra-selector,
+                            pseudo: group-focus,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
             );
             $pseudo-set: map.merge($pseudo-set, $map);
           } @else if $pseudo == checked-sibling {
             $map: (
-              '#{$compiled-pseudo-name}': (
-                selector: 'input:checked ~ .#{$compiled-pseudo-name}#{$extra-selector}',
-                parent: '.#{$compiled-class-name}',
-                category: pseudo,
-                extra-selector: $extra-selector,
-                pseudo: checked-sibling,
-                properties: (
-                  $compiled-properties
-                )
-              )
+                    '#{$compiled-pseudo-name}': (
+                            selector: 'input:checked ~ .#{$compiled-pseudo-name}#{$extra-selector}',
+                            parent: '.#{$compiled-class-name}',
+                            category: pseudo,
+                            extra-selector: $extra-selector,
+                            pseudo: checked-sibling,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
             );
             $pseudo-set: map.merge($pseudo-set, $map);
           } @else if $pseudo != none {
             $map: (
-              '#{$compiled-pseudo-name}': (
-                selector: '.#{$compiled-pseudo-name}#{$extra-selector}#{map.get($all-pseudos, $pseudo)}',
-                parent: '.#{$compiled-class-name}',
-                category: pseudo,
-                extra-selector: $extra-selector,
-                pseudo: $pseudo,
-                properties: (
-                  $compiled-properties
-                )
-              )
+                    '#{$compiled-pseudo-name}': (
+                            selector: '.#{$compiled-pseudo-name}#{$extra-selector}#{map.get($all-pseudos, $pseudo)}',
+                            parent: '.#{$compiled-class-name}',
+                            category: pseudo,
+                            extra-selector: $extra-selector,
+                            pseudo: $pseudo,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
             );
             $pseudo-set: map.merge($pseudo-set, $map);
           }
@@ -442,42 +442,42 @@ $json-set: ();
                 $compiled-class-name: #{$prefix}#{$shorthand}#{$delimiter}#{$merged-variant};
               };
             }
-      
+
             // Merge properties
             $merged-properties: ();
             @if meta.type-of($merged-variant-value) == map {
               @each $key, $value in $merged-variant-value {
                 $map: (
-                  #{$key}: $value #{if($important == true or $local-important == true, !important, null)}
+                        #{$key}: $value #{if($important == true or $local-important == true, !important, null)}
                 );
                 $merged-properties: map.merge($merged-properties, $map);
               }
             } @else {
               @each $property in $properties {
                 $map: (
-                  #{$property}: $merged-variant-value #{if($important == true or $local-important == true, !important, null)}
+                        #{$property}: $merged-variant-value #{if($important == true or $local-important == true, !important, null)}
                 );
                 $merged-properties: map.merge($merged-properties, $map);
               }
             }
-      
+
             $compiled-properties: map.merge($static-properties, $merged-properties);
-      
+
             $map: (
-              '#{$screen}#{$screen-delimiter}#{$compiled-class-name}': (
-                selector: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}#{$extra-selector}',
-                parent: null,
-                category: standard,
-                extra-selector: $extra-selector,
-                screen: $screen,
-                properties: (
-                  $compiled-properties
-                )
-              )
+                    '#{$screen}#{$screen-delimiter}#{$compiled-class-name}': (
+                            selector: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}#{$extra-selector}',
+                            parent: null,
+                            category: standard,
+                            extra-selector: $extra-selector,
+                            screen: $screen,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
             );
 
             $class-set: map.merge($class-set, $map);
-      
+
             @if $responsive-pseudos == true {
 
               // for EACH PSEUDO do the following
@@ -486,62 +486,62 @@ $json-set: ();
 
                 @if $pseudo == group-hover {
                   $map: (
-                    '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
-                      selector: '.group:hover .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
-                      parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
-                      category: pseudo,
-                      extra-selector: $extra-selector,
-                      pseudo: group-hover,
-                      screen: $screen,
-                      properties: (
-                        $compiled-properties
-                      )
-                    )
+                          '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
+                                  selector: '.group:hover .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
+                                  parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
+                                  category: pseudo,
+                                  extra-selector: $extra-selector,
+                                  pseudo: group-hover,
+                                  screen: $screen,
+                                  properties: (
+                                          $compiled-properties
+                                  )
+                          )
                   );
                   $pseudo-set: map.merge($pseudo-set, $map);
                 } @else if $pseudo == group-focus {
                   $map: (
-                    '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
-                      selector: '.group:focus .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
-                      parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
-                      category: pseudo,
-                      extra-selector: $extra-selector,
-                      pseudo: group-focus,
-                      screen: $screen,
-                      properties: (
-                        $compiled-properties
-                      )
-                    )
+                          '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
+                                  selector: '.group:focus .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
+                                  parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
+                                  category: pseudo,
+                                  extra-selector: $extra-selector,
+                                  pseudo: group-focus,
+                                  screen: $screen,
+                                  properties: (
+                                          $compiled-properties
+                                  )
+                          )
                   );
                   $pseudo-set: map.merge($pseudo-set, $map);
                 } @else if $pseudo == checked-sibling {
                   $map: (
-                    '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
-                      selector: 'input:checked ~ .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
-                      parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
-                      category: pseudo,
-                      extra-selector: $extra-selector,
-                      pseudo: checked-sibling,
-                      screen: $screen,
-                      properties: (
-                        $compiled-properties
-                      )
-                    )
+                          '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
+                                  selector: 'input:checked ~ .#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}',
+                                  parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
+                                  category: pseudo,
+                                  extra-selector: $extra-selector,
+                                  pseudo: checked-sibling,
+                                  screen: $screen,
+                                  properties: (
+                                          $compiled-properties
+                                  )
+                          )
                   );
                   $pseudo-set: map.merge($pseudo-set, $map);
                 } @else if $pseudo != none {
                   $map: (
-                    '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
-                      selector: '.#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}#{map.get($all-pseudos, $pseudo)}',
-                      parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
-                      category: pseudo,
-                      extra-selector: $extra-selector,
-                      pseudo: $pseudo,
-                      screen: $screen,
-                      properties: (
-                        $compiled-properties
-                      )
-                    )
+                          '#{$compiled-responsive-pseudo-name}#{$compiled-class-name}': (
+                                  selector: '.#{$compiled-responsive-pseudo-name}#{$compiled-class-name}#{$extra-selector}#{map.get($all-pseudos, $pseudo)}',
+                                  parent: '.#{$screen}#{$screen-delimiter}#{$compiled-class-name}',
+                                  category: pseudo,
+                                  extra-selector: $extra-selector,
+                                  pseudo: $pseudo,
+                                  screen: $screen,
+                                  properties: (
+                                          $compiled-properties
+                                  )
+                          )
                   );
                   $pseudo-set: map.merge($pseudo-set, $map);
                 }
@@ -556,7 +556,7 @@ $json-set: ();
   }
 
   @if map.get($config, output) == 'json' {
-    @each $utility, $utility-value in $utilities { 
+    @each $utility, $utility-value in $utilities {
       $include-condition: true;
       @if list.index($excludes, all) {
         $include-condition: false;
@@ -571,7 +571,7 @@ $json-set: ();
 
         // Setup initial variables
         $local-important: map.get($utility-value, important);
-        
+
         $shorthand: map.get($utility-value, shorthand);
         $extra-selector: map.get($utility-value, extra-selector);
         $responsive: map.get($utility-value, responsive);
@@ -626,35 +626,35 @@ $json-set: ();
           @if meta.type-of($merged-variant-value) == map {
             @each $key, $value in $merged-variant-value {
               $map: (
-                #{$key}: $value
+                      #{$key}: $value
               );
               $merged-properties: map.merge($merged-properties, $map);
             }
           } @else {
             @each $property in $properties {
               $map: (
-                #{$property}: $merged-variant-value
+                      #{$property}: $merged-variant-value
               );
               $merged-properties: map.merge($merged-properties, $map);
             }
           }
           $compiled-properties: map.merge($static-properties, $merged-properties);
-          
+
           // Compile class with property
           $compiled-class: ($compiled-class-name: $compiled-properties);
           $class-map: map.merge($class-map, $compiled-class)
         }
 
         $map: (
-          '#{$utility}': (
-            important: #{if($important == true or $local-important == true, 'true', 'false')},
-            responsive: $responsive,
-            pseudos: $merged-pseudos,
-            extra-selector: $extra-selector,
-            classes: (
-              $class-map
-            )
-          )
+                '#{$utility}': (
+                        important: #{if($important == true or $local-important == true, 'true', 'false')},
+                        responsive: $responsive,
+                        pseudos: $merged-pseudos,
+                        extra-selector: $extra-selector,
+                        classes: (
+                                $class-map
+                        )
+                )
         );
         $json-set: map.merge($json-set, $map) !global;
       }
@@ -676,7 +676,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
       $parent: map.get($detail, parent);
       $category: map.get($detail, category);
       $properties: map.get($detail, properties);
-  
+
       #{$selector} {
         @if $category == standard {
           @each $key, $value in $properties {
@@ -687,7 +687,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
         }
       }
     }
-    
+
     @if map.get($config, screens) != null {
       @each $screen, $screen-value in map.get($config, screens) {
         @media (min-width: $screen-value) {
@@ -697,7 +697,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               $parent: map.get($detail, parent);
               $category: map.get($detail, category);
               $properties: map.get($detail, properties);
-              
+
               #{$selector} {
                 @if $category == standard {
                   @each $key, $value in $properties {
@@ -708,7 +708,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
                 }
               }
             }
-          }				
+          }
         }
       }
     }
@@ -718,7 +718,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
       $parent: map.get($detail, parent);
       $category: map.get($detail, category);
       $properties: map.get($detail, properties);
-  
+
       #{$selector} {
         @each $key, $value in $properties {
           #{$key}: #{$value};
@@ -734,14 +734,14 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               $parent: map.get($detail, parent);
               $category: map.get($detail, category);
               $properties: map.get($detail, properties);
-              
+
               #{$selector} {
                 @each $key, $value in $properties {
                   #{$key}: #{$value};
                 }
               }
             }
-          }				
+          }
         }
       }
     }
@@ -760,7 +760,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
   $output: #{''};
 
   @each $class, $class-detail in $classes {
-    
+
     $important: map.get($class-detail, important);
     $responsive: map.get($class-detail, responsive);
     $pseudos: map.get($class-detail, pseudos);
@@ -797,7 +797,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
   $utility-array: core.string-split($utilities, ' ');
 
   @each $utility in $utility-array {
-    
+
     $escaped-utility: core.escape($utility);
     @if $escaped-utility != "" {
       @if map.get($merged-class-set, $escaped-utility) == null {
@@ -811,10 +811,10 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
         $all-pseudos: map.get($config, pseudos);
         $pseudo: map.get($target-utility, pseudo);
         $screen: map.get($target-utility, screen);
-        
+
         @if $screen == null {
           @if $category == pseudo {
-            @if $pseudo == group-hover {	
+            @if $pseudo == group-hover {
               @at-root .group:hover & {
                 @if $extra-selector == null {
                   @each $property, $value in $properties {
@@ -887,7 +887,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
         } @else {
           @media (min-width: map.get($config, screens, $screen)) {
             @if $category == pseudo {
-              @if $pseudo == group-hover {	
+              @if $pseudo == group-hover {
                 @at-root .group:hover & {
                   @if $extra-selector == null {
                     @each $property, $value in $properties {
