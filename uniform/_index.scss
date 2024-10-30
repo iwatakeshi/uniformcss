@@ -736,7 +736,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               $category: map.get($detail, category);
               $properties: map.get($detail, properties);
 
-              #{$selector} {
+              #{core.escape-selector($selector)} {
                 @each $key, $value in $properties {
                   #{$key}: #{$value};
                 }
