@@ -25,7 +25,7 @@ $config: (
 }
 
 @function hex2rgb($hexColor) {
-  @return "#{color.red($hexColor)},#{color.green($hexColor)},#{color.blue($hexColor)}";
+  @return "#{color.channel($hexColor, "red", $space: rgb)},#{color.channel($hexColor, "green", $space: rgb)},#{color.channel($hexColor, "blue", $space: rgb)}";
 }
 
 @function escape($any) {
