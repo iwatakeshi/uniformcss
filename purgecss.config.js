@@ -5,6 +5,6 @@ module.exports = {
     '**/*.liquid',
     '**/*.md'
   ],
-  css: ['dist/uniform.min.css'],
+  css: ['uniform.min.css'],
   defaultExtractor: content => content.match(/[^<>"'`\s]*[^<>"'`\s:\.]/g) || []
 }
