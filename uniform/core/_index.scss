@@ -74,6 +74,26 @@ $config: (
   @return $escaped-string;
 }
 
+/// Escapes numeric selectors with \3 prefix
+/// @param {String} $selector - The selector to escape
+/// @return {String} The escaped selector
+@function escape-selector($selector) {
+  $first-char: string.slice($selector, 1, 1);
+  $second-char: string.slice($selector, 2, 2);
+  $is-first-number: string.index("0123456789", $first-char);
+  $is-second-number: string.index("0123456789", $second-char);
+
+  @if $first-char == "." and $is-second-number {
+    @return "." + "\\3" + $second-char + string.slice($selector, 3);
+  }
+
+  @if $is-first-number {
+    @return "\\3" + $first-char + string.slice($selector, 2);
+  }
+
+  @return $selector;
+}
+
 @function string-split($string, $separator) {
   // empty array/list
   $split-array: ();
@@ -132,10 +152,11 @@ $default-config: (
   ),
 
   screens: (
-    sm: 768px,
-    md: 1024px,
-    lg: 1280px,
-    // xl: 1536px
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    2xl: 1536px,
   ),
 
   pseudos: (

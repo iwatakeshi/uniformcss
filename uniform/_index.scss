@@ -668,6 +668,7 @@ $standard-class-set: map.merge($standard-class-set, $standard-pseudo-set);
 $responsive-class-set: map.merge($responsive-class-set, $responsive-pseudo-set);
 $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
 
+
 // Class generation
 @if map.get($config, output) == 'css' {
   @if map.get($config, comma-compression) == true {
@@ -698,7 +699,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               $category: map.get($detail, category);
               $properties: map.get($detail, properties);
 
-              #{$selector} {
+              #{core.escape-selector($selector)} {
                 @if $category == standard {
                   @each $key, $value in $properties {
                     #{$key}: #{$value};
@@ -735,7 +736,7 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               $category: map.get($detail, category);
               $properties: map.get($detail, properties);
 
-              #{$selector} {
+              #{core.escape-selector($selector)} {
                 @each $key, $value in $properties {
                   #{$key}: #{$value};
                 }
