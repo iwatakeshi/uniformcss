@@ -1,6 +1,6 @@
 {
-  "name": "uniformcss",
-  "version": "1.5.4",
+  "name": "@iwatakeshi/uniformcss",
+  "version": "0.0.0",
   "description": "A fully configurable utility class generator and CSS framework built for Sass projects.",
   "main": "main.sass",
   "files": [
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ThinkUniform/uniformcss.git"
+    "url": "git://github.com/iwatakeshi/uniformcss.git"
   },
   "keywords": [
     "css",
@@ -28,11 +28,6 @@
     "utility-first",
     "uniformcss"
   ],
-  "author": {
-    "name": "Jin Su Park",
-    "email": "jinsupark@icloud.com",
-    "url": "https://jinsupark.com/"
-  },
   "license": "MIT",
   "devDependencies": {
     "postcss-cli": "^11.0.0",
