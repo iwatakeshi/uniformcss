@@ -13,7 +13,8 @@
     "uniform:compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.min.css --style compressed",
     "uniform:watch": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.css",
     "uniform:watch-compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.min.css --style compressed",
-    "uniform:purge": "purgecss -c purgecss.config.js -o dist"
+    "uniform:purge": "purgecss -c purgecss.config.js -o dist",
+    "prepare": "npm run uniform && npm run uniform:compressed && npm run uniform:purge"
   },
   "repository": {
     "type": "git",
