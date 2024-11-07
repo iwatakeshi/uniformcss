@@ -8,6 +8,9 @@
     "uniform",
     "dist"
   ],
+  "exports": {
+    "./*.sass": "./uniform/*.sass"
+  },
   "scripts": {
     "uniform": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.css",
     "uniform:compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.min.css --style compressed",
