@@ -9,7 +9,9 @@
     "dist"
   ],
   "exports": {
-    "./*.sass": "./uniform/*.sass"
+    ".": {
+      "sass": "./uniform/_index.scss"
+    }
   },
   "scripts": {
     "uniform": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.css",
