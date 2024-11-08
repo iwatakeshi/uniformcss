@@ -17,10 +17,24 @@ $config: (
         core.merge(
           core.positive-sizes($range-limit),
           (
+            0: 0,
+            1p: 1%,
+            25p: 25%,
             50p: 50%,
+            75p: 75%,
             100p: 100%,
+
+            1vw: 1vw,
+            25vw: 25vw,
             50vw: 50vw,
+            75vw: 75vw,
             100vw: 100vw,
+
+            1svg: 1svw,
+            25svg: 25svw,
+            50svg: 50svw,
+            75svg: 75svw,
+            100svg: 100svw
           )
         )
       ),
