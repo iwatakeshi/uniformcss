@@ -823,27 +823,27 @@ select {
   text-transform: capitalize;
 }
 
-.space-normal {
+.whitespace-normal {
   white-space: normal;
 }
 
-.space-nowrap {
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
-.space-pre {
+.whitespace-pre {
   white-space: pre;
 }
 
-.space-pre-wrap {
+.whitespace-pre-wrap {
   white-space: pre-wrap;
 }
 
-.space-pre-line {
+.whitespace-pre-line {
   white-space: pre-line;
 }
 
-.space-break {
+.whitespace-break {
   white-space: break-spaces;
 }
 
