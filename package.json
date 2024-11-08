@@ -10,7 +10,11 @@
   ],
   "exports": {
     ".": {
-      "sass": "./uniform/_index.scss"
+      "sass": "./uniform/_index.scss",
+      "./*.scss": {
+        "sass": "./uniform/*.scss"
+      }
+      
     }
   },
   "scripts": {
