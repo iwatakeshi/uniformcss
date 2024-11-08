@@ -1,47 +1,39 @@
 {
-  "name": "@iwatakeshi/uniformcss",
-  "version": "1.0.2",
-  "description": "A fully configurable utility class generator and CSS framework built for Sass projects.",
-  "main": "main.sass",
-  "files": [
-    "main.sass",
-    "uniform",
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "sass": "./uniform/_index.scss",
-      "./*.scss": {
-        "sass": "./uniform/*.scss"
-      }
-      
-    }
-  },
-  "scripts": {
-    "uniform": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.css",
-    "uniform:compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.min.css --style compressed",
-    "uniform:watch": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.css",
-    "uniform:watch-compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.min.css --style compressed",
-    "uniform:purge": "purgecss -c purgecss.config.js -o dist",
-    "prepare": "npm run uniform && npm run uniform:compressed && npm run uniform:purge",
-    "test": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/iwatakeshi/uniformcss.git"
-  },
-  "keywords": [
-    "css",
-    "sass",
-    "functional css",
-    "atomic css",
-    "responsive css",
-    "utility-first",
-    "uniformcss"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "postcss-cli": "^11.0.0",
-    "purgecss": "^6.0.0"
-  }
+	"name": "@iwatakeshi/uniformcss",
+	"version": "1.0.2",
+	"description": "A fully configurable utility class generator and CSS framework built for Sass projects.",
+	"main": "main.sass",
+	"files": ["main.sass", "uniform", "dist"],
+	"exports": {
+		".": {
+			"sass": ["./uniform/_index.scss", "./uniform/**/*.scss"]
+		}
+	},
+	"scripts": {
+		"uniform": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.css",
+		"uniform:compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map main.scss dist/uniform.min.css --style compressed",
+		"uniform:watch": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.css",
+		"uniform:watch-compressed": "sass --load-path=./node_modules/uniformcss --load-path=./ --load-path=./optional-sass-path --no-source-map --watch main.scss dist/uniform.min.css --style compressed",
+		"uniform:purge": "purgecss -c purgecss.config.js -o dist",
+		"prepare": "npm run uniform && npm run uniform:compressed && npm run uniform:purge",
+		"test": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/iwatakeshi/uniformcss.git"
+	},
+	"keywords": [
+		"css",
+		"sass",
+		"functional css",
+		"atomic css",
+		"responsive css",
+		"utility-first",
+		"uniformcss"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"postcss-cli": "^11.0.0",
+		"purgecss": "^6.0.0"
+	}
 }
