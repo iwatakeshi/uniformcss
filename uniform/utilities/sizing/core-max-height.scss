@@ -21,24 +21,34 @@ $config: (
             0: 0,
 
             1p: 1%,
-            1vh: 1vh,
-            1svg: 1svh,
-
             25p: 25%,
-            25vh: 25vh,
-            25svg: 25svh,
-
             50p: 50%,
-            50vh: 50vh,
-            50svg: 50svh,
-
             75p: 75%,
-            75vh: 75vh,
-            75svg: 75svh,
-
             100p: 100%,
+            
+            1vh: 1vh,
+            25vh: 25vh,
+            50vh: 50vh,
+            75vh: 75vh,
             100vh: 100vh,
-            100svg: 100svh
+            
+            1dvh: 1dvh,
+            25dvh: 25dvh,
+            50dvh: 50dvh,
+            75dvh: 75dvh,
+            100dvh: 100dvh,
+
+            1svh: 1svh,
+            25svh: 25svh,
+            50svh: 50svh,
+            75svh: 75svh,
+            100svh: 100svh, 
+            
+            1lvh: 1lvh,
+            25lvh: 25lvh,
+            50lvh: 50lvh,
+            75lvh: 75lvh,
+            100lvh: 100lvh,
           )
         )
       ),

@@ -4,20 +4,15 @@
 $range-limit: map.get(core.$all-config, range-limits, width);
 
 $config: (
-  utilities: (
-    width: (
-      important: false,
-      shorthand: w,
-      responsive: true,
-      responsive-pseudos: false,
-      extra-selector: null,
-      properties: (width),
-      static-properties: (),
-      variants: (
-        core.merge(
-          core.positive-sizes($range-limit),
-					(
-						auto: auto,
+	utilities: (width: (important: false,
+			shorthand: w,
+			responsive: true,
+			responsive-pseudos: false,
+			extra-selector: null,
+			properties: (width),
+			static-properties: (),
+			variants: (core.merge(core.positive-sizes($range-limit),
+					(auto: auto,
 						0: 0,
 						1p: 1%,
 						25p: 25%,
@@ -31,11 +26,23 @@ $config: (
 						75vw: 75vw,
 						100vw: 100vw,
 
-						1svg: 1svw,
-						25svg: 25svw,
-						50svg: 50svw,
-						75svg: 75svw,
-						100svg: 100svw,
+						1svw: 1svw,
+						25svw: 25svw,
+						50svw: 50svw,
+						75svw: 75svw,
+						100svw: 100svw,
+
+						1dvw: 1dvw,
+						25dvw: 25dvw,
+						50dvw: 50dvw,
+						75dvw: 75dvw,
+						100dvw: 100dvw,
+
+						1lvw: 1lvw,
+						25lvw: 25lvw,
+						50lvw: 50lvw,
+						75lvw: 75lvw,
+						100lvw: 100lvw,
 
 						'1-12': 8.333333%,
 						'2-12': 16.666667%,
@@ -48,17 +55,13 @@ $config: (
 						'9-12': 75%,
 						'10-12': 83.333333%,
 						'11-12': 91.666667%,
-						
+
 						'1-5': 20%,
 						'2-5': 40%,
 						'3-5': 60%,
 						'4-5': 80%,
-					)
-        )
-      ),
-      pseudos: (none)
-    )
-  )
+					))),
+			pseudos: (none)))
 );
 
 core.$all-config: map.deep-merge(core.$all-config, $config);
