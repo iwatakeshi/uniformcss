@@ -3012,24 +3012,64 @@ select {
   height: 100vh;
 }
 
-.h-1svg {
+.h-1dvh {
+  height: 1dvh;
+}
+
+.h-25dvh {
+  height: 25dvh;
+}
+
+.h-50dvh {
+  height: 50dvh;
+}
+
+.h-75dvh {
+  height: 75dvh;
+}
+
+.h-100dvh {
+  height: 100dvh;
+}
+
+.h-1svh {
   height: 1svh;
 }
 
-.h-25svg {
+.h-25svh {
   height: 25svh;
 }
 
-.h-50svg {
+.h-50svh {
   height: 50svh;
 }
 
-.h-75svg {
+.h-75svh {
   height: 75svh;
 }
 
-.h-100svg {
+.h-100svh {
   height: 100svh;
+}
+
+.h-1lvh {
+  height: 1lvh;
+}
+
+.h-25lvh {
+  height: 25lvh;
+}
+
+.h-50lvh {
+  height: 50lvh;
+}
+
+.h-75lvh {
+  height: 75lvh;
+}
+
+.h-100lvh {
+  height: 100lvh;
 }
 
 .w-1 {
@@ -3224,24 +3264,64 @@ select {
   width: 100vw;
 }
 
-.w-1svg {
+.w-1svw {
   width: 1svw;
 }
 
-.w-25svg {
+.w-25svw {
   width: 25svw;
 }
 
-.w-50svg {
+.w-50svw {
   width: 50svw;
 }
 
-.w-75svg {
+.w-75svw {
   width: 75svw;
 }
 
-.w-100svg {
+.w-100svw {
   width: 100svw;
+}
+
+.w-1dvw {
+  width: 1dvw;
+}
+
+.w-25dvw {
+  width: 25dvw;
+}
+
+.w-50dvw {
+  width: 50dvw;
+}
+
+.w-75dvw {
+  width: 75dvw;
+}
+
+.w-100dvw {
+  width: 100dvw;
+}
+
+.w-1lvw {
+  width: 1lvw;
+}
+
+.w-25lvw {
+  width: 25lvw;
+}
+
+.w-50lvw {
+  width: 50lvw;
+}
+
+.w-75lvw {
+  width: 75lvw;
+}
+
+.w-100lvw {
+  width: 100lvw;
 }
 
 .w-1-12 {
@@ -3400,24 +3480,64 @@ select {
   min-height: 100vh;
 }
 
-.min-h-1svg {
+.min-h-1dvh {
+  min-height: 1dvh;
+}
+
+.min-h-25dvh {
+  min-height: 25dvh;
+}
+
+.min-h-50dvh {
+  min-height: 50dvh;
+}
+
+.min-h-75dvh {
+  min-height: 75dvh;
+}
+
+.min-h-100dvh {
+  min-height: 100dvh;
+}
+
+.min-h-1svh {
   min-height: 1svh;
 }
 
-.min-h-25svg {
+.min-h-25svh {
   min-height: 25svh;
 }
 
-.min-h-50svg {
+.min-h-50svh {
   min-height: 50svh;
 }
 
-.min-h-75svg {
+.min-h-75svh {
   min-height: 75svh;
 }
 
-.min-h-100svg {
+.min-h-100svh {
   min-height: 100svh;
+}
+
+.min-h-1lvh {
+  min-height: 1lvh;
+}
+
+.min-h-25lvh {
+  min-height: 25lvh;
+}
+
+.min-h-50lvh {
+  min-height: 50lvh;
+}
+
+.min-h-75lvh {
+  min-height: 75lvh;
+}
+
+.min-h-100lvh {
+  min-height: 100lvh;
 }
 
 .min-w-128 {
@@ -3516,24 +3636,76 @@ select {
   min-width: 100vw;
 }
 
-.min-w-1svg {
+.min-w-1dvw {
+  min-width: 1dvw;
+}
+
+.min-w-25dvw {
+  min-width: 25dvw;
+}
+
+.min-w-50dvw {
+  min-width: 50dvw;
+}
+
+.min-w-75dvw {
+  min-width: 75dvw;
+}
+
+.min-w-100dvw {
+  min-width: 100dvw;
+}
+
+.min-w-1svw {
   min-width: 1svw;
 }
 
-.min-w-25svg {
+.min-w-25svw {
   min-width: 25svw;
 }
 
-.min-w-50svg {
+.min-w-50svw {
   min-width: 50svw;
 }
 
-.min-w-75svg {
+.min-w-75svw {
   min-width: 75svw;
 }
 
-.min-w-100svg {
+.min-w-100svw {
   min-width: 100svw;
+}
+
+.min-w-1lvw {
+  min-width: 1lvw;
+}
+
+.min-w-25lvw {
+  min-width: 25lvw;
+}
+
+.min-w-50lvw {
+  min-width: 50lvw;
+}
+
+.min-w-75lvw {
+  min-width: 75lvw;
+}
+
+.min-w-100lvw {
+  min-width: 100lvw;
+}
+
+.min-w-min {
+  min-width: min-content;
+}
+
+.min-w-max {
+  min-width: max-content;
+}
+
+.min-w-text {
+  min-width: 64ch;
 }
 
 .max-h-128 {
@@ -3600,60 +3772,100 @@ select {
   max-height: 1%;
 }
 
-.max-h-1vh {
-  max-height: 1vh;
-}
-
-.max-h-1svg {
-  max-height: 1svh;
-}
-
 .max-h-25p {
   max-height: 25%;
-}
-
-.max-h-25vh {
-  max-height: 25vh;
-}
-
-.max-h-25svg {
-  max-height: 25svh;
 }
 
 .max-h-50p {
   max-height: 50%;
 }
 
-.max-h-50vh {
-  max-height: 50vh;
-}
-
-.max-h-50svg {
-  max-height: 50svh;
-}
-
 .max-h-75p {
   max-height: 75%;
-}
-
-.max-h-75vh {
-  max-height: 75vh;
-}
-
-.max-h-75svg {
-  max-height: 75svh;
 }
 
 .max-h-100p {
   max-height: 100%;
 }
 
+.max-h-1vh {
+  max-height: 1vh;
+}
+
+.max-h-25vh {
+  max-height: 25vh;
+}
+
+.max-h-50vh {
+  max-height: 50vh;
+}
+
+.max-h-75vh {
+  max-height: 75vh;
+}
+
 .max-h-100vh {
   max-height: 100vh;
 }
 
-.max-h-100svg {
+.max-h-1dvh {
+  max-height: 1dvh;
+}
+
+.max-h-25dvh {
+  max-height: 25dvh;
+}
+
+.max-h-50dvh {
+  max-height: 50dvh;
+}
+
+.max-h-75dvh {
+  max-height: 75dvh;
+}
+
+.max-h-100dvh {
+  max-height: 100dvh;
+}
+
+.max-h-1svh {
+  max-height: 1svh;
+}
+
+.max-h-25svh {
+  max-height: 25svh;
+}
+
+.max-h-50svh {
+  max-height: 50svh;
+}
+
+.max-h-75svh {
+  max-height: 75svh;
+}
+
+.max-h-100svh {
   max-height: 100svh;
+}
+
+.max-h-1lvh {
+  max-height: 1lvh;
+}
+
+.max-h-25lvh {
+  max-height: 25lvh;
+}
+
+.max-h-50lvh {
+  max-height: 50lvh;
+}
+
+.max-h-75lvh {
+  max-height: 75lvh;
+}
+
+.max-h-100lvh {
+  max-height: 100lvh;
 }
 
 .max-w-128 {
@@ -3800,23 +4012,23 @@ select {
   max-width: 100vw;
 }
 
-.max-w-1svg {
+.max-w-1svw {
   max-width: 1svw;
 }
 
-.max-w-25svg {
+.max-w-25svw {
   max-width: 25svw;
 }
 
-.max-w-50svg {
+.max-w-50svw {
   max-width: 50svw;
 }
 
-.max-w-75svg {
+.max-w-75svw {
   max-width: 75svw;
 }
 
-.max-w-100svg {
+.max-w-100svw {
   max-width: 100svw;
 }
 
@@ -13958,20 +14170,50 @@ select {
   .sm\:h-100vh {
     height: 100vh;
   }
-  .sm\:h-1svg {
+  .sm\:h-1dvh {
+    height: 1dvh;
+  }
+  .sm\:h-25dvh {
+    height: 25dvh;
+  }
+  .sm\:h-50dvh {
+    height: 50dvh;
+  }
+  .sm\:h-75dvh {
+    height: 75dvh;
+  }
+  .sm\:h-100dvh {
+    height: 100dvh;
+  }
+  .sm\:h-1svh {
     height: 1svh;
   }
-  .sm\:h-25svg {
+  .sm\:h-25svh {
     height: 25svh;
   }
-  .sm\:h-50svg {
+  .sm\:h-50svh {
     height: 50svh;
   }
-  .sm\:h-75svg {
+  .sm\:h-75svh {
     height: 75svh;
   }
-  .sm\:h-100svg {
+  .sm\:h-100svh {
     height: 100svh;
+  }
+  .sm\:h-1lvh {
+    height: 1lvh;
+  }
+  .sm\:h-25lvh {
+    height: 25lvh;
+  }
+  .sm\:h-50lvh {
+    height: 50lvh;
+  }
+  .sm\:h-75lvh {
+    height: 75lvh;
+  }
+  .sm\:h-100lvh {
+    height: 100lvh;
   }
   .sm\:w-1 {
     width: 0.0625rem;
@@ -14117,20 +14359,50 @@ select {
   .sm\:w-100vw {
     width: 100vw;
   }
-  .sm\:w-1svg {
+  .sm\:w-1svw {
     width: 1svw;
   }
-  .sm\:w-25svg {
+  .sm\:w-25svw {
     width: 25svw;
   }
-  .sm\:w-50svg {
+  .sm\:w-50svw {
     width: 50svw;
   }
-  .sm\:w-75svg {
+  .sm\:w-75svw {
     width: 75svw;
   }
-  .sm\:w-100svg {
+  .sm\:w-100svw {
     width: 100svw;
+  }
+  .sm\:w-1dvw {
+    width: 1dvw;
+  }
+  .sm\:w-25dvw {
+    width: 25dvw;
+  }
+  .sm\:w-50dvw {
+    width: 50dvw;
+  }
+  .sm\:w-75dvw {
+    width: 75dvw;
+  }
+  .sm\:w-100dvw {
+    width: 100dvw;
+  }
+  .sm\:w-1lvw {
+    width: 1lvw;
+  }
+  .sm\:w-25lvw {
+    width: 25lvw;
+  }
+  .sm\:w-50lvw {
+    width: 50lvw;
+  }
+  .sm\:w-75lvw {
+    width: 75lvw;
+  }
+  .sm\:w-100lvw {
+    width: 100lvw;
   }
   .sm\:w-1-12 {
     width: 8.333333%;
@@ -14249,20 +14521,50 @@ select {
   .sm\:min-h-100vh {
     min-height: 100vh;
   }
-  .sm\:min-h-1svg {
+  .sm\:min-h-1dvh {
+    min-height: 1dvh;
+  }
+  .sm\:min-h-25dvh {
+    min-height: 25dvh;
+  }
+  .sm\:min-h-50dvh {
+    min-height: 50dvh;
+  }
+  .sm\:min-h-75dvh {
+    min-height: 75dvh;
+  }
+  .sm\:min-h-100dvh {
+    min-height: 100dvh;
+  }
+  .sm\:min-h-1svh {
     min-height: 1svh;
   }
-  .sm\:min-h-25svg {
+  .sm\:min-h-25svh {
     min-height: 25svh;
   }
-  .sm\:min-h-50svg {
+  .sm\:min-h-50svh {
     min-height: 50svh;
   }
-  .sm\:min-h-75svg {
+  .sm\:min-h-75svh {
     min-height: 75svh;
   }
-  .sm\:min-h-100svg {
+  .sm\:min-h-100svh {
     min-height: 100svh;
+  }
+  .sm\:min-h-1lvh {
+    min-height: 1lvh;
+  }
+  .sm\:min-h-25lvh {
+    min-height: 25lvh;
+  }
+  .sm\:min-h-50lvh {
+    min-height: 50lvh;
+  }
+  .sm\:min-h-75lvh {
+    min-height: 75lvh;
+  }
+  .sm\:min-h-100lvh {
+    min-height: 100lvh;
   }
   .sm\:min-w-128 {
     min-width: 8rem;
@@ -14336,20 +14638,59 @@ select {
   .sm\:min-w-100vw {
     min-width: 100vw;
   }
-  .sm\:min-w-1svg {
+  .sm\:min-w-1dvw {
+    min-width: 1dvw;
+  }
+  .sm\:min-w-25dvw {
+    min-width: 25dvw;
+  }
+  .sm\:min-w-50dvw {
+    min-width: 50dvw;
+  }
+  .sm\:min-w-75dvw {
+    min-width: 75dvw;
+  }
+  .sm\:min-w-100dvw {
+    min-width: 100dvw;
+  }
+  .sm\:min-w-1svw {
     min-width: 1svw;
   }
-  .sm\:min-w-25svg {
+  .sm\:min-w-25svw {
     min-width: 25svw;
   }
-  .sm\:min-w-50svg {
+  .sm\:min-w-50svw {
     min-width: 50svw;
   }
-  .sm\:min-w-75svg {
+  .sm\:min-w-75svw {
     min-width: 75svw;
   }
-  .sm\:min-w-100svg {
+  .sm\:min-w-100svw {
     min-width: 100svw;
+  }
+  .sm\:min-w-1lvw {
+    min-width: 1lvw;
+  }
+  .sm\:min-w-25lvw {
+    min-width: 25lvw;
+  }
+  .sm\:min-w-50lvw {
+    min-width: 50lvw;
+  }
+  .sm\:min-w-75lvw {
+    min-width: 75lvw;
+  }
+  .sm\:min-w-100lvw {
+    min-width: 100lvw;
+  }
+  .sm\:min-w-min {
+    min-width: min-content;
+  }
+  .sm\:min-w-max {
+    min-width: max-content;
+  }
+  .sm\:min-w-text {
+    min-width: 64ch;
   }
   .sm\:max-h-128 {
     max-height: 8rem;
@@ -14399,47 +14740,77 @@ select {
   .sm\:max-h-1p {
     max-height: 1%;
   }
-  .sm\:max-h-1vh {
-    max-height: 1vh;
-  }
-  .sm\:max-h-1svg {
-    max-height: 1svh;
-  }
   .sm\:max-h-25p {
     max-height: 25%;
-  }
-  .sm\:max-h-25vh {
-    max-height: 25vh;
-  }
-  .sm\:max-h-25svg {
-    max-height: 25svh;
   }
   .sm\:max-h-50p {
     max-height: 50%;
   }
-  .sm\:max-h-50vh {
-    max-height: 50vh;
-  }
-  .sm\:max-h-50svg {
-    max-height: 50svh;
-  }
   .sm\:max-h-75p {
     max-height: 75%;
-  }
-  .sm\:max-h-75vh {
-    max-height: 75vh;
-  }
-  .sm\:max-h-75svg {
-    max-height: 75svh;
   }
   .sm\:max-h-100p {
     max-height: 100%;
   }
+  .sm\:max-h-1vh {
+    max-height: 1vh;
+  }
+  .sm\:max-h-25vh {
+    max-height: 25vh;
+  }
+  .sm\:max-h-50vh {
+    max-height: 50vh;
+  }
+  .sm\:max-h-75vh {
+    max-height: 75vh;
+  }
   .sm\:max-h-100vh {
     max-height: 100vh;
   }
-  .sm\:max-h-100svg {
+  .sm\:max-h-1dvh {
+    max-height: 1dvh;
+  }
+  .sm\:max-h-25dvh {
+    max-height: 25dvh;
+  }
+  .sm\:max-h-50dvh {
+    max-height: 50dvh;
+  }
+  .sm\:max-h-75dvh {
+    max-height: 75dvh;
+  }
+  .sm\:max-h-100dvh {
+    max-height: 100dvh;
+  }
+  .sm\:max-h-1svh {
+    max-height: 1svh;
+  }
+  .sm\:max-h-25svh {
+    max-height: 25svh;
+  }
+  .sm\:max-h-50svh {
+    max-height: 50svh;
+  }
+  .sm\:max-h-75svh {
+    max-height: 75svh;
+  }
+  .sm\:max-h-100svh {
     max-height: 100svh;
+  }
+  .sm\:max-h-1lvh {
+    max-height: 1lvh;
+  }
+  .sm\:max-h-25lvh {
+    max-height: 25lvh;
+  }
+  .sm\:max-h-50lvh {
+    max-height: 50lvh;
+  }
+  .sm\:max-h-75lvh {
+    max-height: 75lvh;
+  }
+  .sm\:max-h-100lvh {
+    max-height: 100lvh;
   }
   .sm\:max-w-128 {
     max-width: 8rem;
@@ -14549,19 +14920,19 @@ select {
   .sm\:max-w-100vw {
     max-width: 100vw;
   }
-  .sm\:max-w-1svg {
+  .sm\:max-w-1svw {
     max-width: 1svw;
   }
-  .sm\:max-w-25svg {
+  .sm\:max-w-25svw {
     max-width: 25svw;
   }
-  .sm\:max-w-50svg {
+  .sm\:max-w-50svw {
     max-width: 50svw;
   }
-  .sm\:max-w-75svg {
+  .sm\:max-w-75svw {
     max-width: 75svw;
   }
-  .sm\:max-w-100svg {
+  .sm\:max-w-100svw {
     max-width: 100svw;
   }
   .sm\:max-w-min {
@@ -20930,20 +21301,50 @@ select {
   .md\:h-100vh {
     height: 100vh;
   }
-  .md\:h-1svg {
+  .md\:h-1dvh {
+    height: 1dvh;
+  }
+  .md\:h-25dvh {
+    height: 25dvh;
+  }
+  .md\:h-50dvh {
+    height: 50dvh;
+  }
+  .md\:h-75dvh {
+    height: 75dvh;
+  }
+  .md\:h-100dvh {
+    height: 100dvh;
+  }
+  .md\:h-1svh {
     height: 1svh;
   }
-  .md\:h-25svg {
+  .md\:h-25svh {
     height: 25svh;
   }
-  .md\:h-50svg {
+  .md\:h-50svh {
     height: 50svh;
   }
-  .md\:h-75svg {
+  .md\:h-75svh {
     height: 75svh;
   }
-  .md\:h-100svg {
+  .md\:h-100svh {
     height: 100svh;
+  }
+  .md\:h-1lvh {
+    height: 1lvh;
+  }
+  .md\:h-25lvh {
+    height: 25lvh;
+  }
+  .md\:h-50lvh {
+    height: 50lvh;
+  }
+  .md\:h-75lvh {
+    height: 75lvh;
+  }
+  .md\:h-100lvh {
+    height: 100lvh;
   }
   .md\:w-1 {
     width: 0.0625rem;
@@ -21089,20 +21490,50 @@ select {
   .md\:w-100vw {
     width: 100vw;
   }
-  .md\:w-1svg {
+  .md\:w-1svw {
     width: 1svw;
   }
-  .md\:w-25svg {
+  .md\:w-25svw {
     width: 25svw;
   }
-  .md\:w-50svg {
+  .md\:w-50svw {
     width: 50svw;
   }
-  .md\:w-75svg {
+  .md\:w-75svw {
     width: 75svw;
   }
-  .md\:w-100svg {
+  .md\:w-100svw {
     width: 100svw;
+  }
+  .md\:w-1dvw {
+    width: 1dvw;
+  }
+  .md\:w-25dvw {
+    width: 25dvw;
+  }
+  .md\:w-50dvw {
+    width: 50dvw;
+  }
+  .md\:w-75dvw {
+    width: 75dvw;
+  }
+  .md\:w-100dvw {
+    width: 100dvw;
+  }
+  .md\:w-1lvw {
+    width: 1lvw;
+  }
+  .md\:w-25lvw {
+    width: 25lvw;
+  }
+  .md\:w-50lvw {
+    width: 50lvw;
+  }
+  .md\:w-75lvw {
+    width: 75lvw;
+  }
+  .md\:w-100lvw {
+    width: 100lvw;
   }
   .md\:w-1-12 {
     width: 8.333333%;
@@ -21221,20 +21652,50 @@ select {
   .md\:min-h-100vh {
     min-height: 100vh;
   }
-  .md\:min-h-1svg {
+  .md\:min-h-1dvh {
+    min-height: 1dvh;
+  }
+  .md\:min-h-25dvh {
+    min-height: 25dvh;
+  }
+  .md\:min-h-50dvh {
+    min-height: 50dvh;
+  }
+  .md\:min-h-75dvh {
+    min-height: 75dvh;
+  }
+  .md\:min-h-100dvh {
+    min-height: 100dvh;
+  }
+  .md\:min-h-1svh {
     min-height: 1svh;
   }
-  .md\:min-h-25svg {
+  .md\:min-h-25svh {
     min-height: 25svh;
   }
-  .md\:min-h-50svg {
+  .md\:min-h-50svh {
     min-height: 50svh;
   }
-  .md\:min-h-75svg {
+  .md\:min-h-75svh {
     min-height: 75svh;
   }
-  .md\:min-h-100svg {
+  .md\:min-h-100svh {
     min-height: 100svh;
+  }
+  .md\:min-h-1lvh {
+    min-height: 1lvh;
+  }
+  .md\:min-h-25lvh {
+    min-height: 25lvh;
+  }
+  .md\:min-h-50lvh {
+    min-height: 50lvh;
+  }
+  .md\:min-h-75lvh {
+    min-height: 75lvh;
+  }
+  .md\:min-h-100lvh {
+    min-height: 100lvh;
   }
   .md\:min-w-128 {
     min-width: 8rem;
@@ -21308,20 +21769,59 @@ select {
   .md\:min-w-100vw {
     min-width: 100vw;
   }
-  .md\:min-w-1svg {
+  .md\:min-w-1dvw {
+    min-width: 1dvw;
+  }
+  .md\:min-w-25dvw {
+    min-width: 25dvw;
+  }
+  .md\:min-w-50dvw {
+    min-width: 50dvw;
+  }
+  .md\:min-w-75dvw {
+    min-width: 75dvw;
+  }
+  .md\:min-w-100dvw {
+    min-width: 100dvw;
+  }
+  .md\:min-w-1svw {
     min-width: 1svw;
   }
-  .md\:min-w-25svg {
+  .md\:min-w-25svw {
     min-width: 25svw;
   }
-  .md\:min-w-50svg {
+  .md\:min-w-50svw {
     min-width: 50svw;
   }
-  .md\:min-w-75svg {
+  .md\:min-w-75svw {
     min-width: 75svw;
   }
-  .md\:min-w-100svg {
+  .md\:min-w-100svw {
     min-width: 100svw;
+  }
+  .md\:min-w-1lvw {
+    min-width: 1lvw;
+  }
+  .md\:min-w-25lvw {
+    min-width: 25lvw;
+  }
+  .md\:min-w-50lvw {
+    min-width: 50lvw;
+  }
+  .md\:min-w-75lvw {
+    min-width: 75lvw;
+  }
+  .md\:min-w-100lvw {
+    min-width: 100lvw;
+  }
+  .md\:min-w-min {
+    min-width: min-content;
+  }
+  .md\:min-w-max {
+    min-width: max-content;
+  }
+  .md\:min-w-text {
+    min-width: 64ch;
   }
   .md\:max-h-128 {
     max-height: 8rem;
@@ -21371,47 +21871,77 @@ select {
   .md\:max-h-1p {
     max-height: 1%;
   }
-  .md\:max-h-1vh {
-    max-height: 1vh;
-  }
-  .md\:max-h-1svg {
-    max-height: 1svh;
-  }
   .md\:max-h-25p {
     max-height: 25%;
-  }
-  .md\:max-h-25vh {
-    max-height: 25vh;
-  }
-  .md\:max-h-25svg {
-    max-height: 25svh;
   }
   .md\:max-h-50p {
     max-height: 50%;
   }
-  .md\:max-h-50vh {
-    max-height: 50vh;
-  }
-  .md\:max-h-50svg {
-    max-height: 50svh;
-  }
   .md\:max-h-75p {
     max-height: 75%;
-  }
-  .md\:max-h-75vh {
-    max-height: 75vh;
-  }
-  .md\:max-h-75svg {
-    max-height: 75svh;
   }
   .md\:max-h-100p {
     max-height: 100%;
   }
+  .md\:max-h-1vh {
+    max-height: 1vh;
+  }
+  .md\:max-h-25vh {
+    max-height: 25vh;
+  }
+  .md\:max-h-50vh {
+    max-height: 50vh;
+  }
+  .md\:max-h-75vh {
+    max-height: 75vh;
+  }
   .md\:max-h-100vh {
     max-height: 100vh;
   }
-  .md\:max-h-100svg {
+  .md\:max-h-1dvh {
+    max-height: 1dvh;
+  }
+  .md\:max-h-25dvh {
+    max-height: 25dvh;
+  }
+  .md\:max-h-50dvh {
+    max-height: 50dvh;
+  }
+  .md\:max-h-75dvh {
+    max-height: 75dvh;
+  }
+  .md\:max-h-100dvh {
+    max-height: 100dvh;
+  }
+  .md\:max-h-1svh {
+    max-height: 1svh;
+  }
+  .md\:max-h-25svh {
+    max-height: 25svh;
+  }
+  .md\:max-h-50svh {
+    max-height: 50svh;
+  }
+  .md\:max-h-75svh {
+    max-height: 75svh;
+  }
+  .md\:max-h-100svh {
     max-height: 100svh;
+  }
+  .md\:max-h-1lvh {
+    max-height: 1lvh;
+  }
+  .md\:max-h-25lvh {
+    max-height: 25lvh;
+  }
+  .md\:max-h-50lvh {
+    max-height: 50lvh;
+  }
+  .md\:max-h-75lvh {
+    max-height: 75lvh;
+  }
+  .md\:max-h-100lvh {
+    max-height: 100lvh;
   }
   .md\:max-w-128 {
     max-width: 8rem;
@@ -21521,19 +22051,19 @@ select {
   .md\:max-w-100vw {
     max-width: 100vw;
   }
-  .md\:max-w-1svg {
+  .md\:max-w-1svw {
     max-width: 1svw;
   }
-  .md\:max-w-25svg {
+  .md\:max-w-25svw {
     max-width: 25svw;
   }
-  .md\:max-w-50svg {
+  .md\:max-w-50svw {
     max-width: 50svw;
   }
-  .md\:max-w-75svg {
+  .md\:max-w-75svw {
     max-width: 75svw;
   }
-  .md\:max-w-100svg {
+  .md\:max-w-100svw {
     max-width: 100svw;
   }
   .md\:max-w-min {
@@ -27902,20 +28432,50 @@ select {
   .lg\:h-100vh {
     height: 100vh;
   }
-  .lg\:h-1svg {
+  .lg\:h-1dvh {
+    height: 1dvh;
+  }
+  .lg\:h-25dvh {
+    height: 25dvh;
+  }
+  .lg\:h-50dvh {
+    height: 50dvh;
+  }
+  .lg\:h-75dvh {
+    height: 75dvh;
+  }
+  .lg\:h-100dvh {
+    height: 100dvh;
+  }
+  .lg\:h-1svh {
     height: 1svh;
   }
-  .lg\:h-25svg {
+  .lg\:h-25svh {
     height: 25svh;
   }
-  .lg\:h-50svg {
+  .lg\:h-50svh {
     height: 50svh;
   }
-  .lg\:h-75svg {
+  .lg\:h-75svh {
     height: 75svh;
   }
-  .lg\:h-100svg {
+  .lg\:h-100svh {
     height: 100svh;
+  }
+  .lg\:h-1lvh {
+    height: 1lvh;
+  }
+  .lg\:h-25lvh {
+    height: 25lvh;
+  }
+  .lg\:h-50lvh {
+    height: 50lvh;
+  }
+  .lg\:h-75lvh {
+    height: 75lvh;
+  }
+  .lg\:h-100lvh {
+    height: 100lvh;
   }
   .lg\:w-1 {
     width: 0.0625rem;
@@ -28061,20 +28621,50 @@ select {
   .lg\:w-100vw {
     width: 100vw;
   }
-  .lg\:w-1svg {
+  .lg\:w-1svw {
     width: 1svw;
   }
-  .lg\:w-25svg {
+  .lg\:w-25svw {
     width: 25svw;
   }
-  .lg\:w-50svg {
+  .lg\:w-50svw {
     width: 50svw;
   }
-  .lg\:w-75svg {
+  .lg\:w-75svw {
     width: 75svw;
   }
-  .lg\:w-100svg {
+  .lg\:w-100svw {
     width: 100svw;
+  }
+  .lg\:w-1dvw {
+    width: 1dvw;
+  }
+  .lg\:w-25dvw {
+    width: 25dvw;
+  }
+  .lg\:w-50dvw {
+    width: 50dvw;
+  }
+  .lg\:w-75dvw {
+    width: 75dvw;
+  }
+  .lg\:w-100dvw {
+    width: 100dvw;
+  }
+  .lg\:w-1lvw {
+    width: 1lvw;
+  }
+  .lg\:w-25lvw {
+    width: 25lvw;
+  }
+  .lg\:w-50lvw {
+    width: 50lvw;
+  }
+  .lg\:w-75lvw {
+    width: 75lvw;
+  }
+  .lg\:w-100lvw {
+    width: 100lvw;
   }
   .lg\:w-1-12 {
     width: 8.333333%;
@@ -28193,20 +28783,50 @@ select {
   .lg\:min-h-100vh {
     min-height: 100vh;
   }
-  .lg\:min-h-1svg {
+  .lg\:min-h-1dvh {
+    min-height: 1dvh;
+  }
+  .lg\:min-h-25dvh {
+    min-height: 25dvh;
+  }
+  .lg\:min-h-50dvh {
+    min-height: 50dvh;
+  }
+  .lg\:min-h-75dvh {
+    min-height: 75dvh;
+  }
+  .lg\:min-h-100dvh {
+    min-height: 100dvh;
+  }
+  .lg\:min-h-1svh {
     min-height: 1svh;
   }
-  .lg\:min-h-25svg {
+  .lg\:min-h-25svh {
     min-height: 25svh;
   }
-  .lg\:min-h-50svg {
+  .lg\:min-h-50svh {
     min-height: 50svh;
   }
-  .lg\:min-h-75svg {
+  .lg\:min-h-75svh {
     min-height: 75svh;
   }
-  .lg\:min-h-100svg {
+  .lg\:min-h-100svh {
     min-height: 100svh;
+  }
+  .lg\:min-h-1lvh {
+    min-height: 1lvh;
+  }
+  .lg\:min-h-25lvh {
+    min-height: 25lvh;
+  }
+  .lg\:min-h-50lvh {
+    min-height: 50lvh;
+  }
+  .lg\:min-h-75lvh {
+    min-height: 75lvh;
+  }
+  .lg\:min-h-100lvh {
+    min-height: 100lvh;
   }
   .lg\:min-w-128 {
     min-width: 8rem;
@@ -28280,20 +28900,59 @@ select {
   .lg\:min-w-100vw {
     min-width: 100vw;
   }
-  .lg\:min-w-1svg {
+  .lg\:min-w-1dvw {
+    min-width: 1dvw;
+  }
+  .lg\:min-w-25dvw {
+    min-width: 25dvw;
+  }
+  .lg\:min-w-50dvw {
+    min-width: 50dvw;
+  }
+  .lg\:min-w-75dvw {
+    min-width: 75dvw;
+  }
+  .lg\:min-w-100dvw {
+    min-width: 100dvw;
+  }
+  .lg\:min-w-1svw {
     min-width: 1svw;
   }
-  .lg\:min-w-25svg {
+  .lg\:min-w-25svw {
     min-width: 25svw;
   }
-  .lg\:min-w-50svg {
+  .lg\:min-w-50svw {
     min-width: 50svw;
   }
-  .lg\:min-w-75svg {
+  .lg\:min-w-75svw {
     min-width: 75svw;
   }
-  .lg\:min-w-100svg {
+  .lg\:min-w-100svw {
     min-width: 100svw;
+  }
+  .lg\:min-w-1lvw {
+    min-width: 1lvw;
+  }
+  .lg\:min-w-25lvw {
+    min-width: 25lvw;
+  }
+  .lg\:min-w-50lvw {
+    min-width: 50lvw;
+  }
+  .lg\:min-w-75lvw {
+    min-width: 75lvw;
+  }
+  .lg\:min-w-100lvw {
+    min-width: 100lvw;
+  }
+  .lg\:min-w-min {
+    min-width: min-content;
+  }
+  .lg\:min-w-max {
+    min-width: max-content;
+  }
+  .lg\:min-w-text {
+    min-width: 64ch;
   }
   .lg\:max-h-128 {
     max-height: 8rem;
@@ -28343,47 +29002,77 @@ select {
   .lg\:max-h-1p {
     max-height: 1%;
   }
-  .lg\:max-h-1vh {
-    max-height: 1vh;
-  }
-  .lg\:max-h-1svg {
-    max-height: 1svh;
-  }
   .lg\:max-h-25p {
     max-height: 25%;
-  }
-  .lg\:max-h-25vh {
-    max-height: 25vh;
-  }
-  .lg\:max-h-25svg {
-    max-height: 25svh;
   }
   .lg\:max-h-50p {
     max-height: 50%;
   }
-  .lg\:max-h-50vh {
-    max-height: 50vh;
-  }
-  .lg\:max-h-50svg {
-    max-height: 50svh;
-  }
   .lg\:max-h-75p {
     max-height: 75%;
-  }
-  .lg\:max-h-75vh {
-    max-height: 75vh;
-  }
-  .lg\:max-h-75svg {
-    max-height: 75svh;
   }
   .lg\:max-h-100p {
     max-height: 100%;
   }
+  .lg\:max-h-1vh {
+    max-height: 1vh;
+  }
+  .lg\:max-h-25vh {
+    max-height: 25vh;
+  }
+  .lg\:max-h-50vh {
+    max-height: 50vh;
+  }
+  .lg\:max-h-75vh {
+    max-height: 75vh;
+  }
   .lg\:max-h-100vh {
     max-height: 100vh;
   }
-  .lg\:max-h-100svg {
+  .lg\:max-h-1dvh {
+    max-height: 1dvh;
+  }
+  .lg\:max-h-25dvh {
+    max-height: 25dvh;
+  }
+  .lg\:max-h-50dvh {
+    max-height: 50dvh;
+  }
+  .lg\:max-h-75dvh {
+    max-height: 75dvh;
+  }
+  .lg\:max-h-100dvh {
+    max-height: 100dvh;
+  }
+  .lg\:max-h-1svh {
+    max-height: 1svh;
+  }
+  .lg\:max-h-25svh {
+    max-height: 25svh;
+  }
+  .lg\:max-h-50svh {
+    max-height: 50svh;
+  }
+  .lg\:max-h-75svh {
+    max-height: 75svh;
+  }
+  .lg\:max-h-100svh {
     max-height: 100svh;
+  }
+  .lg\:max-h-1lvh {
+    max-height: 1lvh;
+  }
+  .lg\:max-h-25lvh {
+    max-height: 25lvh;
+  }
+  .lg\:max-h-50lvh {
+    max-height: 50lvh;
+  }
+  .lg\:max-h-75lvh {
+    max-height: 75lvh;
+  }
+  .lg\:max-h-100lvh {
+    max-height: 100lvh;
   }
   .lg\:max-w-128 {
     max-width: 8rem;
@@ -28493,19 +29182,19 @@ select {
   .lg\:max-w-100vw {
     max-width: 100vw;
   }
-  .lg\:max-w-1svg {
+  .lg\:max-w-1svw {
     max-width: 1svw;
   }
-  .lg\:max-w-25svg {
+  .lg\:max-w-25svw {
     max-width: 25svw;
   }
-  .lg\:max-w-50svg {
+  .lg\:max-w-50svw {
     max-width: 50svw;
   }
-  .lg\:max-w-75svg {
+  .lg\:max-w-75svw {
     max-width: 75svw;
   }
-  .lg\:max-w-100svg {
+  .lg\:max-w-100svw {
     max-width: 100svw;
   }
   .lg\:max-w-min {
@@ -34874,20 +35563,50 @@ select {
   .xl\:h-100vh {
     height: 100vh;
   }
-  .xl\:h-1svg {
+  .xl\:h-1dvh {
+    height: 1dvh;
+  }
+  .xl\:h-25dvh {
+    height: 25dvh;
+  }
+  .xl\:h-50dvh {
+    height: 50dvh;
+  }
+  .xl\:h-75dvh {
+    height: 75dvh;
+  }
+  .xl\:h-100dvh {
+    height: 100dvh;
+  }
+  .xl\:h-1svh {
     height: 1svh;
   }
-  .xl\:h-25svg {
+  .xl\:h-25svh {
     height: 25svh;
   }
-  .xl\:h-50svg {
+  .xl\:h-50svh {
     height: 50svh;
   }
-  .xl\:h-75svg {
+  .xl\:h-75svh {
     height: 75svh;
   }
-  .xl\:h-100svg {
+  .xl\:h-100svh {
     height: 100svh;
+  }
+  .xl\:h-1lvh {
+    height: 1lvh;
+  }
+  .xl\:h-25lvh {
+    height: 25lvh;
+  }
+  .xl\:h-50lvh {
+    height: 50lvh;
+  }
+  .xl\:h-75lvh {
+    height: 75lvh;
+  }
+  .xl\:h-100lvh {
+    height: 100lvh;
   }
   .xl\:w-1 {
     width: 0.0625rem;
@@ -35033,20 +35752,50 @@ select {
   .xl\:w-100vw {
     width: 100vw;
   }
-  .xl\:w-1svg {
+  .xl\:w-1svw {
     width: 1svw;
   }
-  .xl\:w-25svg {
+  .xl\:w-25svw {
     width: 25svw;
   }
-  .xl\:w-50svg {
+  .xl\:w-50svw {
     width: 50svw;
   }
-  .xl\:w-75svg {
+  .xl\:w-75svw {
     width: 75svw;
   }
-  .xl\:w-100svg {
+  .xl\:w-100svw {
     width: 100svw;
+  }
+  .xl\:w-1dvw {
+    width: 1dvw;
+  }
+  .xl\:w-25dvw {
+    width: 25dvw;
+  }
+  .xl\:w-50dvw {
+    width: 50dvw;
+  }
+  .xl\:w-75dvw {
+    width: 75dvw;
+  }
+  .xl\:w-100dvw {
+    width: 100dvw;
+  }
+  .xl\:w-1lvw {
+    width: 1lvw;
+  }
+  .xl\:w-25lvw {
+    width: 25lvw;
+  }
+  .xl\:w-50lvw {
+    width: 50lvw;
+  }
+  .xl\:w-75lvw {
+    width: 75lvw;
+  }
+  .xl\:w-100lvw {
+    width: 100lvw;
   }
   .xl\:w-1-12 {
     width: 8.333333%;
@@ -35165,20 +35914,50 @@ select {
   .xl\:min-h-100vh {
     min-height: 100vh;
   }
-  .xl\:min-h-1svg {
+  .xl\:min-h-1dvh {
+    min-height: 1dvh;
+  }
+  .xl\:min-h-25dvh {
+    min-height: 25dvh;
+  }
+  .xl\:min-h-50dvh {
+    min-height: 50dvh;
+  }
+  .xl\:min-h-75dvh {
+    min-height: 75dvh;
+  }
+  .xl\:min-h-100dvh {
+    min-height: 100dvh;
+  }
+  .xl\:min-h-1svh {
     min-height: 1svh;
   }
-  .xl\:min-h-25svg {
+  .xl\:min-h-25svh {
     min-height: 25svh;
   }
-  .xl\:min-h-50svg {
+  .xl\:min-h-50svh {
     min-height: 50svh;
   }
-  .xl\:min-h-75svg {
+  .xl\:min-h-75svh {
     min-height: 75svh;
   }
-  .xl\:min-h-100svg {
+  .xl\:min-h-100svh {
     min-height: 100svh;
+  }
+  .xl\:min-h-1lvh {
+    min-height: 1lvh;
+  }
+  .xl\:min-h-25lvh {
+    min-height: 25lvh;
+  }
+  .xl\:min-h-50lvh {
+    min-height: 50lvh;
+  }
+  .xl\:min-h-75lvh {
+    min-height: 75lvh;
+  }
+  .xl\:min-h-100lvh {
+    min-height: 100lvh;
   }
   .xl\:min-w-128 {
     min-width: 8rem;
@@ -35252,20 +36031,59 @@ select {
   .xl\:min-w-100vw {
     min-width: 100vw;
   }
-  .xl\:min-w-1svg {
+  .xl\:min-w-1dvw {
+    min-width: 1dvw;
+  }
+  .xl\:min-w-25dvw {
+    min-width: 25dvw;
+  }
+  .xl\:min-w-50dvw {
+    min-width: 50dvw;
+  }
+  .xl\:min-w-75dvw {
+    min-width: 75dvw;
+  }
+  .xl\:min-w-100dvw {
+    min-width: 100dvw;
+  }
+  .xl\:min-w-1svw {
     min-width: 1svw;
   }
-  .xl\:min-w-25svg {
+  .xl\:min-w-25svw {
     min-width: 25svw;
   }
-  .xl\:min-w-50svg {
+  .xl\:min-w-50svw {
     min-width: 50svw;
   }
-  .xl\:min-w-75svg {
+  .xl\:min-w-75svw {
     min-width: 75svw;
   }
-  .xl\:min-w-100svg {
+  .xl\:min-w-100svw {
     min-width: 100svw;
+  }
+  .xl\:min-w-1lvw {
+    min-width: 1lvw;
+  }
+  .xl\:min-w-25lvw {
+    min-width: 25lvw;
+  }
+  .xl\:min-w-50lvw {
+    min-width: 50lvw;
+  }
+  .xl\:min-w-75lvw {
+    min-width: 75lvw;
+  }
+  .xl\:min-w-100lvw {
+    min-width: 100lvw;
+  }
+  .xl\:min-w-min {
+    min-width: min-content;
+  }
+  .xl\:min-w-max {
+    min-width: max-content;
+  }
+  .xl\:min-w-text {
+    min-width: 64ch;
   }
   .xl\:max-h-128 {
     max-height: 8rem;
@@ -35315,47 +36133,77 @@ select {
   .xl\:max-h-1p {
     max-height: 1%;
   }
-  .xl\:max-h-1vh {
-    max-height: 1vh;
-  }
-  .xl\:max-h-1svg {
-    max-height: 1svh;
-  }
   .xl\:max-h-25p {
     max-height: 25%;
-  }
-  .xl\:max-h-25vh {
-    max-height: 25vh;
-  }
-  .xl\:max-h-25svg {
-    max-height: 25svh;
   }
   .xl\:max-h-50p {
     max-height: 50%;
   }
-  .xl\:max-h-50vh {
-    max-height: 50vh;
-  }
-  .xl\:max-h-50svg {
-    max-height: 50svh;
-  }
   .xl\:max-h-75p {
     max-height: 75%;
-  }
-  .xl\:max-h-75vh {
-    max-height: 75vh;
-  }
-  .xl\:max-h-75svg {
-    max-height: 75svh;
   }
   .xl\:max-h-100p {
     max-height: 100%;
   }
+  .xl\:max-h-1vh {
+    max-height: 1vh;
+  }
+  .xl\:max-h-25vh {
+    max-height: 25vh;
+  }
+  .xl\:max-h-50vh {
+    max-height: 50vh;
+  }
+  .xl\:max-h-75vh {
+    max-height: 75vh;
+  }
   .xl\:max-h-100vh {
     max-height: 100vh;
   }
-  .xl\:max-h-100svg {
+  .xl\:max-h-1dvh {
+    max-height: 1dvh;
+  }
+  .xl\:max-h-25dvh {
+    max-height: 25dvh;
+  }
+  .xl\:max-h-50dvh {
+    max-height: 50dvh;
+  }
+  .xl\:max-h-75dvh {
+    max-height: 75dvh;
+  }
+  .xl\:max-h-100dvh {
+    max-height: 100dvh;
+  }
+  .xl\:max-h-1svh {
+    max-height: 1svh;
+  }
+  .xl\:max-h-25svh {
+    max-height: 25svh;
+  }
+  .xl\:max-h-50svh {
+    max-height: 50svh;
+  }
+  .xl\:max-h-75svh {
+    max-height: 75svh;
+  }
+  .xl\:max-h-100svh {
     max-height: 100svh;
+  }
+  .xl\:max-h-1lvh {
+    max-height: 1lvh;
+  }
+  .xl\:max-h-25lvh {
+    max-height: 25lvh;
+  }
+  .xl\:max-h-50lvh {
+    max-height: 50lvh;
+  }
+  .xl\:max-h-75lvh {
+    max-height: 75lvh;
+  }
+  .xl\:max-h-100lvh {
+    max-height: 100lvh;
   }
   .xl\:max-w-128 {
     max-width: 8rem;
@@ -35465,19 +36313,19 @@ select {
   .xl\:max-w-100vw {
     max-width: 100vw;
   }
-  .xl\:max-w-1svg {
+  .xl\:max-w-1svw {
     max-width: 1svw;
   }
-  .xl\:max-w-25svg {
+  .xl\:max-w-25svw {
     max-width: 25svw;
   }
-  .xl\:max-w-50svg {
+  .xl\:max-w-50svw {
     max-width: 50svw;
   }
-  .xl\:max-w-75svg {
+  .xl\:max-w-75svw {
     max-width: 75svw;
   }
-  .xl\:max-w-100svg {
+  .xl\:max-w-100svw {
     max-width: 100svw;
   }
   .xl\:max-w-min {
@@ -41846,20 +42694,50 @@ select {
   .\32 xl\:h-100vh {
     height: 100vh;
   }
-  .\32 xl\:h-1svg {
+  .\32 xl\:h-1dvh {
+    height: 1dvh;
+  }
+  .\32 xl\:h-25dvh {
+    height: 25dvh;
+  }
+  .\32 xl\:h-50dvh {
+    height: 50dvh;
+  }
+  .\32 xl\:h-75dvh {
+    height: 75dvh;
+  }
+  .\32 xl\:h-100dvh {
+    height: 100dvh;
+  }
+  .\32 xl\:h-1svh {
     height: 1svh;
   }
-  .\32 xl\:h-25svg {
+  .\32 xl\:h-25svh {
     height: 25svh;
   }
-  .\32 xl\:h-50svg {
+  .\32 xl\:h-50svh {
     height: 50svh;
   }
-  .\32 xl\:h-75svg {
+  .\32 xl\:h-75svh {
     height: 75svh;
   }
-  .\32 xl\:h-100svg {
+  .\32 xl\:h-100svh {
     height: 100svh;
+  }
+  .\32 xl\:h-1lvh {
+    height: 1lvh;
+  }
+  .\32 xl\:h-25lvh {
+    height: 25lvh;
+  }
+  .\32 xl\:h-50lvh {
+    height: 50lvh;
+  }
+  .\32 xl\:h-75lvh {
+    height: 75lvh;
+  }
+  .\32 xl\:h-100lvh {
+    height: 100lvh;
   }
   .\32 xl\:w-1 {
     width: 0.0625rem;
@@ -42005,20 +42883,50 @@ select {
   .\32 xl\:w-100vw {
     width: 100vw;
   }
-  .\32 xl\:w-1svg {
+  .\32 xl\:w-1svw {
     width: 1svw;
   }
-  .\32 xl\:w-25svg {
+  .\32 xl\:w-25svw {
     width: 25svw;
   }
-  .\32 xl\:w-50svg {
+  .\32 xl\:w-50svw {
     width: 50svw;
   }
-  .\32 xl\:w-75svg {
+  .\32 xl\:w-75svw {
     width: 75svw;
   }
-  .\32 xl\:w-100svg {
+  .\32 xl\:w-100svw {
     width: 100svw;
+  }
+  .\32 xl\:w-1dvw {
+    width: 1dvw;
+  }
+  .\32 xl\:w-25dvw {
+    width: 25dvw;
+  }
+  .\32 xl\:w-50dvw {
+    width: 50dvw;
+  }
+  .\32 xl\:w-75dvw {
+    width: 75dvw;
+  }
+  .\32 xl\:w-100dvw {
+    width: 100dvw;
+  }
+  .\32 xl\:w-1lvw {
+    width: 1lvw;
+  }
+  .\32 xl\:w-25lvw {
+    width: 25lvw;
+  }
+  .\32 xl\:w-50lvw {
+    width: 50lvw;
+  }
+  .\32 xl\:w-75lvw {
+    width: 75lvw;
+  }
+  .\32 xl\:w-100lvw {
+    width: 100lvw;
   }
   .\32 xl\:w-1-12 {
     width: 8.333333%;
@@ -42137,20 +43045,50 @@ select {
   .\32 xl\:min-h-100vh {
     min-height: 100vh;
   }
-  .\32 xl\:min-h-1svg {
+  .\32 xl\:min-h-1dvh {
+    min-height: 1dvh;
+  }
+  .\32 xl\:min-h-25dvh {
+    min-height: 25dvh;
+  }
+  .\32 xl\:min-h-50dvh {
+    min-height: 50dvh;
+  }
+  .\32 xl\:min-h-75dvh {
+    min-height: 75dvh;
+  }
+  .\32 xl\:min-h-100dvh {
+    min-height: 100dvh;
+  }
+  .\32 xl\:min-h-1svh {
     min-height: 1svh;
   }
-  .\32 xl\:min-h-25svg {
+  .\32 xl\:min-h-25svh {
     min-height: 25svh;
   }
-  .\32 xl\:min-h-50svg {
+  .\32 xl\:min-h-50svh {
     min-height: 50svh;
   }
-  .\32 xl\:min-h-75svg {
+  .\32 xl\:min-h-75svh {
     min-height: 75svh;
   }
-  .\32 xl\:min-h-100svg {
+  .\32 xl\:min-h-100svh {
     min-height: 100svh;
+  }
+  .\32 xl\:min-h-1lvh {
+    min-height: 1lvh;
+  }
+  .\32 xl\:min-h-25lvh {
+    min-height: 25lvh;
+  }
+  .\32 xl\:min-h-50lvh {
+    min-height: 50lvh;
+  }
+  .\32 xl\:min-h-75lvh {
+    min-height: 75lvh;
+  }
+  .\32 xl\:min-h-100lvh {
+    min-height: 100lvh;
   }
   .\32 xl\:min-w-128 {
     min-width: 8rem;
@@ -42224,20 +43162,59 @@ select {
   .\32 xl\:min-w-100vw {
     min-width: 100vw;
   }
-  .\32 xl\:min-w-1svg {
+  .\32 xl\:min-w-1dvw {
+    min-width: 1dvw;
+  }
+  .\32 xl\:min-w-25dvw {
+    min-width: 25dvw;
+  }
+  .\32 xl\:min-w-50dvw {
+    min-width: 50dvw;
+  }
+  .\32 xl\:min-w-75dvw {
+    min-width: 75dvw;
+  }
+  .\32 xl\:min-w-100dvw {
+    min-width: 100dvw;
+  }
+  .\32 xl\:min-w-1svw {
     min-width: 1svw;
   }
-  .\32 xl\:min-w-25svg {
+  .\32 xl\:min-w-25svw {
     min-width: 25svw;
   }
-  .\32 xl\:min-w-50svg {
+  .\32 xl\:min-w-50svw {
     min-width: 50svw;
   }
-  .\32 xl\:min-w-75svg {
+  .\32 xl\:min-w-75svw {
     min-width: 75svw;
   }
-  .\32 xl\:min-w-100svg {
+  .\32 xl\:min-w-100svw {
     min-width: 100svw;
+  }
+  .\32 xl\:min-w-1lvw {
+    min-width: 1lvw;
+  }
+  .\32 xl\:min-w-25lvw {
+    min-width: 25lvw;
+  }
+  .\32 xl\:min-w-50lvw {
+    min-width: 50lvw;
+  }
+  .\32 xl\:min-w-75lvw {
+    min-width: 75lvw;
+  }
+  .\32 xl\:min-w-100lvw {
+    min-width: 100lvw;
+  }
+  .\32 xl\:min-w-min {
+    min-width: min-content;
+  }
+  .\32 xl\:min-w-max {
+    min-width: max-content;
+  }
+  .\32 xl\:min-w-text {
+    min-width: 64ch;
   }
   .\32 xl\:max-h-128 {
     max-height: 8rem;
@@ -42287,47 +43264,77 @@ select {
   .\32 xl\:max-h-1p {
     max-height: 1%;
   }
-  .\32 xl\:max-h-1vh {
-    max-height: 1vh;
-  }
-  .\32 xl\:max-h-1svg {
-    max-height: 1svh;
-  }
   .\32 xl\:max-h-25p {
     max-height: 25%;
-  }
-  .\32 xl\:max-h-25vh {
-    max-height: 25vh;
-  }
-  .\32 xl\:max-h-25svg {
-    max-height: 25svh;
   }
   .\32 xl\:max-h-50p {
     max-height: 50%;
   }
-  .\32 xl\:max-h-50vh {
-    max-height: 50vh;
-  }
-  .\32 xl\:max-h-50svg {
-    max-height: 50svh;
-  }
   .\32 xl\:max-h-75p {
     max-height: 75%;
-  }
-  .\32 xl\:max-h-75vh {
-    max-height: 75vh;
-  }
-  .\32 xl\:max-h-75svg {
-    max-height: 75svh;
   }
   .\32 xl\:max-h-100p {
     max-height: 100%;
   }
+  .\32 xl\:max-h-1vh {
+    max-height: 1vh;
+  }
+  .\32 xl\:max-h-25vh {
+    max-height: 25vh;
+  }
+  .\32 xl\:max-h-50vh {
+    max-height: 50vh;
+  }
+  .\32 xl\:max-h-75vh {
+    max-height: 75vh;
+  }
   .\32 xl\:max-h-100vh {
     max-height: 100vh;
   }
-  .\32 xl\:max-h-100svg {
+  .\32 xl\:max-h-1dvh {
+    max-height: 1dvh;
+  }
+  .\32 xl\:max-h-25dvh {
+    max-height: 25dvh;
+  }
+  .\32 xl\:max-h-50dvh {
+    max-height: 50dvh;
+  }
+  .\32 xl\:max-h-75dvh {
+    max-height: 75dvh;
+  }
+  .\32 xl\:max-h-100dvh {
+    max-height: 100dvh;
+  }
+  .\32 xl\:max-h-1svh {
+    max-height: 1svh;
+  }
+  .\32 xl\:max-h-25svh {
+    max-height: 25svh;
+  }
+  .\32 xl\:max-h-50svh {
+    max-height: 50svh;
+  }
+  .\32 xl\:max-h-75svh {
+    max-height: 75svh;
+  }
+  .\32 xl\:max-h-100svh {
     max-height: 100svh;
+  }
+  .\32 xl\:max-h-1lvh {
+    max-height: 1lvh;
+  }
+  .\32 xl\:max-h-25lvh {
+    max-height: 25lvh;
+  }
+  .\32 xl\:max-h-50lvh {
+    max-height: 50lvh;
+  }
+  .\32 xl\:max-h-75lvh {
+    max-height: 75lvh;
+  }
+  .\32 xl\:max-h-100lvh {
+    max-height: 100lvh;
   }
   .\32 xl\:max-w-128 {
     max-width: 8rem;
@@ -42437,19 +43444,19 @@ select {
   .\32 xl\:max-w-100vw {
     max-width: 100vw;
   }
-  .\32 xl\:max-w-1svg {
+  .\32 xl\:max-w-1svw {
     max-width: 1svw;
   }
-  .\32 xl\:max-w-25svg {
+  .\32 xl\:max-w-25svw {
     max-width: 25svw;
   }
-  .\32 xl\:max-w-50svg {
+  .\32 xl\:max-w-50svw {
     max-width: 50svw;
   }
-  .\32 xl\:max-w-75svg {
+  .\32 xl\:max-w-75svw {
     max-width: 75svw;
   }
-  .\32 xl\:max-w-100svg {
+  .\32 xl\:max-w-100svw {
     max-width: 100svw;
   }
   .\32 xl\:max-w-min {
