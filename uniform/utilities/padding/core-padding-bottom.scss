@@ -1,4 +1,4 @@
-@use "uniform/core";
+@use "../../core";
 @use "sass:map";
 
 $range-limit: map.get(core.$all-config, range-limits, padding);

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "sass:list";
 @use "sass:meta";
-@use "uniform/core" as *;
+@use ".." as *;
 
 $exclude: map.get($all-config, excludes);
 $include: map.get($all-config, includes);
