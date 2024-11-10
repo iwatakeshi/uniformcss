@@ -10124,6 +10124,10 @@ select {
   visibility: hidden;
 }
 
+.collapse {
+  visibility: collapse;
+}
+
 .decoration-slice {
   box-decoration-break: slice;
   -webkit-box-decoration-break: slice;
@@ -18848,6 +18852,9 @@ select {
   .sm\:invisible {
     visibility: hidden;
   }
+  .sm\:collapse {
+    visibility: collapse;
+  }
   .sm\:decoration-slice {
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
@@ -26356,6 +26363,9 @@ select {
   }
   .md\:invisible {
     visibility: hidden;
+  }
+  .md\:collapse {
+    visibility: collapse;
   }
   .md\:decoration-slice {
     box-decoration-break: slice;
@@ -33866,6 +33876,9 @@ select {
   .lg\:invisible {
     visibility: hidden;
   }
+  .lg\:collapse {
+    visibility: collapse;
+  }
   .lg\:decoration-slice {
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
@@ -41375,6 +41388,9 @@ select {
   .xl\:invisible {
     visibility: hidden;
   }
+  .xl\:collapse {
+    visibility: collapse;
+  }
   .xl\:decoration-slice {
     box-decoration-break: slice;
     -webkit-box-decoration-break: slice;
@@ -48883,6 +48899,9 @@ select {
   }
   .\32 xl\:invisible {
     visibility: hidden;
+  }
+  .\32 xl\:collapse {
+    visibility: collapse;
   }
   .\32 xl\:decoration-slice {
     box-decoration-break: slice;
