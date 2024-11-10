@@ -13,7 +13,8 @@ $config: (
       static-properties: (),
       variants: (
         visible: visible,
-        invisible: hidden
+        invisible: hidden,
+        collapse: collapse
       ),
       pseudos: (none)
     )
