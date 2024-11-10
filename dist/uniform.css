@@ -12046,19 +12046,19 @@ select {
   flex-direction: column-reverse;
 }
 
-.flex-grow-1 {
+.grow-1 {
   flex-grow: 1;
 }
 
-.flex-grow-0 {
+.grow-0 {
   flex-grow: 0;
 }
 
-.flex-shrink-1 {
+.shrink-1 {
   flex-shrink: 1;
 }
 
-.flex-shrink-0 {
+.shrink-0 {
   flex-shrink: 0;
 }
 
@@ -20206,16 +20206,16 @@ select {
   .sm\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .sm\:flex-grow-1 {
+  .sm\:grow-1 {
     flex-grow: 1;
   }
-  .sm\:flex-grow-0 {
+  .sm\:grow-0 {
     flex-grow: 0;
   }
-  .sm\:flex-shrink-1 {
+  .sm\:shrink-1 {
     flex-shrink: 1;
   }
-  .sm\:flex-shrink-0 {
+  .sm\:shrink-0 {
     flex-shrink: 0;
   }
   .sm\:flex-nowrap {
@@ -27718,16 +27718,16 @@ select {
   .md\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .md\:flex-grow-1 {
+  .md\:grow-1 {
     flex-grow: 1;
   }
-  .md\:flex-grow-0 {
+  .md\:grow-0 {
     flex-grow: 0;
   }
-  .md\:flex-shrink-1 {
+  .md\:shrink-1 {
     flex-shrink: 1;
   }
-  .md\:flex-shrink-0 {
+  .md\:shrink-0 {
     flex-shrink: 0;
   }
   .md\:flex-nowrap {
@@ -35230,16 +35230,16 @@ select {
   .lg\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .lg\:flex-grow-1 {
+  .lg\:grow-1 {
     flex-grow: 1;
   }
-  .lg\:flex-grow-0 {
+  .lg\:grow-0 {
     flex-grow: 0;
   }
-  .lg\:flex-shrink-1 {
+  .lg\:shrink-1 {
     flex-shrink: 1;
   }
-  .lg\:flex-shrink-0 {
+  .lg\:shrink-0 {
     flex-shrink: 0;
   }
   .lg\:flex-nowrap {
@@ -42742,16 +42742,16 @@ select {
   .xl\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .xl\:flex-grow-1 {
+  .xl\:grow-1 {
     flex-grow: 1;
   }
-  .xl\:flex-grow-0 {
+  .xl\:grow-0 {
     flex-grow: 0;
   }
-  .xl\:flex-shrink-1 {
+  .xl\:shrink-1 {
     flex-shrink: 1;
   }
-  .xl\:flex-shrink-0 {
+  .xl\:shrink-0 {
     flex-shrink: 0;
   }
   .xl\:flex-nowrap {
@@ -50254,16 +50254,16 @@ select {
   .\32 xl\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .\32 xl\:flex-grow-1 {
+  .\32 xl\:grow-1 {
     flex-grow: 1;
   }
-  .\32 xl\:flex-grow-0 {
+  .\32 xl\:grow-0 {
     flex-grow: 0;
   }
-  .\32 xl\:flex-shrink-1 {
+  .\32 xl\:shrink-1 {
     flex-shrink: 1;
   }
-  .\32 xl\:flex-shrink-0 {
+  .\32 xl\:shrink-0 {
     flex-shrink: 0;
   }
   .\32 xl\:flex-nowrap {
