@@ -171,6 +171,9 @@
 @use "utilities/flexbox/core-flex-shrink";
 @use "utilities/flexbox/core-flex-wrap";
 @use "utilities/flexbox/core-order";
+@use "utilities/flexbox/core-place-content";
+@use "utilities/flexbox/core-place-items";
+@use "utilities/flexbox/core-place-self";
 
 // Utilities - Grid
 @use "utilities/grid/core-grid-auto-flow";

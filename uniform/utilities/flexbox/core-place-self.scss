@@ -1,0 +1,26 @@
+@use "../../core";
+@use "sass:map";
+
+$config: (
+  utilities: (
+    place-self: (
+      important: false,
+      shorthand: place-self,
+      responsive: true,
+      responsive-pseudos: false,
+      extra-selector: null,
+      properties: (place-self),
+      static-properties: (),
+      variants: (
+        auto: auto,
+        start: start,
+        center: center,
+        end: end,
+        stretch: stretch,
+      ),
+      pseudos: (none)
+    )
+  )
+);
+
+core.$all-config: map.deep-merge(core.$all-config, $config);
