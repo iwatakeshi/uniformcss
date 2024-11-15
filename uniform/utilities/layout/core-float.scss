@@ -14,7 +14,9 @@ $config: (
       variants: (
         left: left,
         right: right,
-        none: none
+        none: none,
+        start: start,
+        end: end,
       ),
       pseudos: (none)
     )

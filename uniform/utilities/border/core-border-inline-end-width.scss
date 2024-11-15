@@ -1,0 +1,29 @@
+@use "../../core";
+@use "sass:map";
+
+$range-limit: map.get(core.$all-config, range-limits, border-width);
+
+$config: (
+  utilities: (
+    border-inline-end-width: (
+      important: false,
+      shorthand: border-e,
+      responsive: true,
+      responsive-pseudos: false,
+      extra-selector: null,
+      properties: (border-inline-end-width),
+      static-properties: (),
+      variants: (
+        core.merge(
+          core.positive-sizes($range-limit),
+          (
+            0: 0,
+          )
+        )
+      ),
+      pseudos: (first, rtl, ltr)
+    )
+  )
+);
+
+core.$all-config: map.deep-merge(core.$all-config, $config);

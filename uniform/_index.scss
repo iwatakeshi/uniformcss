@@ -74,6 +74,8 @@
 @use "utilities/margin/core-margin-left";
 @use "utilities/margin/core-margin-right";
 @use "utilities/margin/core-margin-top";
+@use "utilities/margin/core-margin-inline-start.scss";
+@use "utilities/margin/core-margin-inline-end.scss";
 
 // Utilities - Padding
 @use "utilities/padding/core-padding";
@@ -83,6 +85,8 @@
 @use "utilities/padding/core-padding-left";
 @use "utilities/padding/core-padding-right";
 @use "utilities/padding/core-padding-top";
+@use "utilities/padding/core-padding-inline-start.scss";
+@use "utilities/padding/core-padding-inline-end.scss";
 
 // Utilities - Border
 @use "utilities/border/core-border-radius";
@@ -91,6 +95,8 @@
 @use "utilities/border/core-border-top-left-radius";
 @use "utilities/border/core-border-top-right-radius";
 @use "utilities/border/core-border-width";
+@use "utilities/border/core-border-inline-end-width.scss";
+@use "utilities/border/core-border-inline-start-width.scss";
 @use "utilities/border/extension-border-x-width";
 @use "utilities/border/extension-border-y-width";
 @use "utilities/border/core-border-bottom-width";
@@ -396,6 +402,34 @@ $json-set: ();
                             category: pseudo,
                             extra-selector: $extra-selector,
                             pseudo: checked-sibling,
+                            properties: (
+                                    $compiled-properties
+                            )
+                    )
+            );
+            $pseudo-set: map.merge($pseudo-set, $map);
+          } @else if $pseudo == rtl {
+              $map: (
+                      '#{$compiled-pseudo-name}': (
+                              selector: '[dir=rtl] .#{$compiled-pseudo-name}#{$extra-selector}',
+                              parent: '.#{$compiled-class-name}',
+                              category: pseudo,
+                              extra-selector: $extra-selector,
+                              pseudo: rtl,
+                              properties: (
+                                      $compiled-properties
+                              )
+                      )
+              );
+              $pseudo-set: map.merge($pseudo-set, $map);
+          } @else if $pseudo == ltr {
+            $map: (
+                    '#{$compiled-pseudo-name}': (
+                            selector: '[dir=ltr] .#{$compiled-pseudo-name}#{$extra-selector}',
+                            parent: '.#{$compiled-class-name}',
+                            category: pseudo,
+                            extra-selector: $extra-selector,
+                            pseudo: ltr,
                             properties: (
                                     $compiled-properties
                             )
@@ -834,6 +868,34 @@ $merged-class-set: map.merge($standard-class-set, $responsive-class-set);
               }
             } @else if $pseudo == group-focus {
               @at-root .group:focus & {
+                @if $extra-selector == null {
+                  @each $property, $value in $properties {
+                    #{$property}: #{$value};
+                  }
+                } @else {
+                  & #{$extra-selector} {
+                    @each $property, $value in $properties {
+                      #{$property}: #{$value};
+                    }
+                  }
+                }
+              }
+            } @else if $pseudo == checked-sibling {
+              @at-root input:checked ~ & {
+                @if $extra-selector == null {
+                  @each $property, $value in $properties {
+                    #{$property}: #{$value};
+                  }
+                } @else {
+                  & #{$extra-selector} {
+                    @each $property, $value in $properties {
+                      #{$property}: #{$value};
+                    }
+                  }
+                }
+              }
+            } @else if $pseudo != none {
+              @at-root &#{map.get($all-pseudos, $pseudo)} {
                 @if $extra-selector == null {
                   @each $property, $value in $properties {
                     #{$property}: #{$value};
