@@ -3576,6 +3576,18 @@ select {
   min-height: 100lvh;
 }
 
+.min-h-min {
+  min-height: min-content;
+}
+
+.min-h-max {
+  min-height: max-content;
+}
+
+.min-h-fit {
+  min-height: fit-content;
+}
+
 .min-w-128 {
   min-width: 8rem;
 }
@@ -3738,6 +3750,10 @@ select {
 
 .min-w-max {
   min-width: max-content;
+}
+
+.min-w-fit {
+  min-width: fit-content;
 }
 
 .min-w-text {
@@ -4078,6 +4094,62 @@ select {
 
 .max-w-text {
   max-width: 64ch;
+}
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-sm {
+  max-width: 30rem;
+}
+
+.max-w-md {
+  max-width: 40rem;
+}
+
+.max-w-lg {
+  max-width: 50rem;
+}
+
+.max-w-xl {
+  max-width: 60rem;
+}
+
+.max-w-2xl {
+  max-width: 70rem;
+}
+
+.max-w-3xl {
+  max-width: 80rem;
+}
+
+.max-w-4xl {
+  max-width: 90rem;
+}
+
+.max-w-5xl {
+  max-width: 100rem;
+}
+
+.max-w-6xl {
+  max-width: 110rem;
+}
+
+.max-w-7xl {
+  max-width: 120rem;
+}
+
+.max-w-8xl {
+  max-width: 130rem;
+}
+
+.max-w-9xl {
+  max-width: 140rem;
+}
+
+.max-w-10xl {
+  max-width: 150rem;
 }
 
 .transition-100 {
@@ -15776,6 +15848,15 @@ select {
   .sm\:min-h-100lvh {
     min-height: 100lvh;
   }
+  .sm\:min-h-min {
+    min-height: min-content;
+  }
+  .sm\:min-h-max {
+    min-height: max-content;
+  }
+  .sm\:min-h-fit {
+    min-height: fit-content;
+  }
   .sm\:min-w-128 {
     min-width: 8rem;
   }
@@ -15898,6 +15979,9 @@ select {
   }
   .sm\:min-w-max {
     min-width: max-content;
+  }
+  .sm\:min-w-fit {
+    min-width: fit-content;
   }
   .sm\:min-w-text {
     min-width: 64ch;
@@ -16153,6 +16237,48 @@ select {
   }
   .sm\:max-w-text {
     max-width: 64ch;
+  }
+  .sm\:max-w-xs {
+    max-width: 20rem;
+  }
+  .sm\:max-w-sm {
+    max-width: 30rem;
+  }
+  .sm\:max-w-md {
+    max-width: 40rem;
+  }
+  .sm\:max-w-lg {
+    max-width: 50rem;
+  }
+  .sm\:max-w-xl {
+    max-width: 60rem;
+  }
+  .sm\:max-w-2xl {
+    max-width: 70rem;
+  }
+  .sm\:max-w-3xl {
+    max-width: 80rem;
+  }
+  .sm\:max-w-4xl {
+    max-width: 90rem;
+  }
+  .sm\:max-w-5xl {
+    max-width: 100rem;
+  }
+  .sm\:max-w-6xl {
+    max-width: 110rem;
+  }
+  .sm\:max-w-7xl {
+    max-width: 120rem;
+  }
+  .sm\:max-w-8xl {
+    max-width: 130rem;
+  }
+  .sm\:max-w-9xl {
+    max-width: 140rem;
+  }
+  .sm\:max-w-10xl {
+    max-width: 150rem;
   }
   .sm\:gutter-x-1 > * + * {
     --gutter-left: 1;
@@ -23780,6 +23906,15 @@ select {
   .md\:min-h-100lvh {
     min-height: 100lvh;
   }
+  .md\:min-h-min {
+    min-height: min-content;
+  }
+  .md\:min-h-max {
+    min-height: max-content;
+  }
+  .md\:min-h-fit {
+    min-height: fit-content;
+  }
   .md\:min-w-128 {
     min-width: 8rem;
   }
@@ -23902,6 +24037,9 @@ select {
   }
   .md\:min-w-max {
     min-width: max-content;
+  }
+  .md\:min-w-fit {
+    min-width: fit-content;
   }
   .md\:min-w-text {
     min-width: 64ch;
@@ -24157,6 +24295,48 @@ select {
   }
   .md\:max-w-text {
     max-width: 64ch;
+  }
+  .md\:max-w-xs {
+    max-width: 20rem;
+  }
+  .md\:max-w-sm {
+    max-width: 30rem;
+  }
+  .md\:max-w-md {
+    max-width: 40rem;
+  }
+  .md\:max-w-lg {
+    max-width: 50rem;
+  }
+  .md\:max-w-xl {
+    max-width: 60rem;
+  }
+  .md\:max-w-2xl {
+    max-width: 70rem;
+  }
+  .md\:max-w-3xl {
+    max-width: 80rem;
+  }
+  .md\:max-w-4xl {
+    max-width: 90rem;
+  }
+  .md\:max-w-5xl {
+    max-width: 100rem;
+  }
+  .md\:max-w-6xl {
+    max-width: 110rem;
+  }
+  .md\:max-w-7xl {
+    max-width: 120rem;
+  }
+  .md\:max-w-8xl {
+    max-width: 130rem;
+  }
+  .md\:max-w-9xl {
+    max-width: 140rem;
+  }
+  .md\:max-w-10xl {
+    max-width: 150rem;
   }
   .md\:gutter-x-1 > * + * {
     --gutter-left: 1;
@@ -31784,6 +31964,15 @@ select {
   .lg\:min-h-100lvh {
     min-height: 100lvh;
   }
+  .lg\:min-h-min {
+    min-height: min-content;
+  }
+  .lg\:min-h-max {
+    min-height: max-content;
+  }
+  .lg\:min-h-fit {
+    min-height: fit-content;
+  }
   .lg\:min-w-128 {
     min-width: 8rem;
   }
@@ -31906,6 +32095,9 @@ select {
   }
   .lg\:min-w-max {
     min-width: max-content;
+  }
+  .lg\:min-w-fit {
+    min-width: fit-content;
   }
   .lg\:min-w-text {
     min-width: 64ch;
@@ -32161,6 +32353,48 @@ select {
   }
   .lg\:max-w-text {
     max-width: 64ch;
+  }
+  .lg\:max-w-xs {
+    max-width: 20rem;
+  }
+  .lg\:max-w-sm {
+    max-width: 30rem;
+  }
+  .lg\:max-w-md {
+    max-width: 40rem;
+  }
+  .lg\:max-w-lg {
+    max-width: 50rem;
+  }
+  .lg\:max-w-xl {
+    max-width: 60rem;
+  }
+  .lg\:max-w-2xl {
+    max-width: 70rem;
+  }
+  .lg\:max-w-3xl {
+    max-width: 80rem;
+  }
+  .lg\:max-w-4xl {
+    max-width: 90rem;
+  }
+  .lg\:max-w-5xl {
+    max-width: 100rem;
+  }
+  .lg\:max-w-6xl {
+    max-width: 110rem;
+  }
+  .lg\:max-w-7xl {
+    max-width: 120rem;
+  }
+  .lg\:max-w-8xl {
+    max-width: 130rem;
+  }
+  .lg\:max-w-9xl {
+    max-width: 140rem;
+  }
+  .lg\:max-w-10xl {
+    max-width: 150rem;
   }
   .lg\:gutter-x-1 > * + * {
     --gutter-left: 1;
@@ -39788,6 +40022,15 @@ select {
   .xl\:min-h-100lvh {
     min-height: 100lvh;
   }
+  .xl\:min-h-min {
+    min-height: min-content;
+  }
+  .xl\:min-h-max {
+    min-height: max-content;
+  }
+  .xl\:min-h-fit {
+    min-height: fit-content;
+  }
   .xl\:min-w-128 {
     min-width: 8rem;
   }
@@ -39910,6 +40153,9 @@ select {
   }
   .xl\:min-w-max {
     min-width: max-content;
+  }
+  .xl\:min-w-fit {
+    min-width: fit-content;
   }
   .xl\:min-w-text {
     min-width: 64ch;
@@ -40165,6 +40411,48 @@ select {
   }
   .xl\:max-w-text {
     max-width: 64ch;
+  }
+  .xl\:max-w-xs {
+    max-width: 20rem;
+  }
+  .xl\:max-w-sm {
+    max-width: 30rem;
+  }
+  .xl\:max-w-md {
+    max-width: 40rem;
+  }
+  .xl\:max-w-lg {
+    max-width: 50rem;
+  }
+  .xl\:max-w-xl {
+    max-width: 60rem;
+  }
+  .xl\:max-w-2xl {
+    max-width: 70rem;
+  }
+  .xl\:max-w-3xl {
+    max-width: 80rem;
+  }
+  .xl\:max-w-4xl {
+    max-width: 90rem;
+  }
+  .xl\:max-w-5xl {
+    max-width: 100rem;
+  }
+  .xl\:max-w-6xl {
+    max-width: 110rem;
+  }
+  .xl\:max-w-7xl {
+    max-width: 120rem;
+  }
+  .xl\:max-w-8xl {
+    max-width: 130rem;
+  }
+  .xl\:max-w-9xl {
+    max-width: 140rem;
+  }
+  .xl\:max-w-10xl {
+    max-width: 150rem;
   }
   .xl\:gutter-x-1 > * + * {
     --gutter-left: 1;
@@ -47792,6 +48080,15 @@ select {
   .\32 xl\:min-h-100lvh {
     min-height: 100lvh;
   }
+  .\32 xl\:min-h-min {
+    min-height: min-content;
+  }
+  .\32 xl\:min-h-max {
+    min-height: max-content;
+  }
+  .\32 xl\:min-h-fit {
+    min-height: fit-content;
+  }
   .\32 xl\:min-w-128 {
     min-width: 8rem;
   }
@@ -47914,6 +48211,9 @@ select {
   }
   .\32 xl\:min-w-max {
     min-width: max-content;
+  }
+  .\32 xl\:min-w-fit {
+    min-width: fit-content;
   }
   .\32 xl\:min-w-text {
     min-width: 64ch;
@@ -48169,6 +48469,48 @@ select {
   }
   .\32 xl\:max-w-text {
     max-width: 64ch;
+  }
+  .\32 xl\:max-w-xs {
+    max-width: 20rem;
+  }
+  .\32 xl\:max-w-sm {
+    max-width: 30rem;
+  }
+  .\32 xl\:max-w-md {
+    max-width: 40rem;
+  }
+  .\32 xl\:max-w-lg {
+    max-width: 50rem;
+  }
+  .\32 xl\:max-w-xl {
+    max-width: 60rem;
+  }
+  .\32 xl\:max-w-2xl {
+    max-width: 70rem;
+  }
+  .\32 xl\:max-w-3xl {
+    max-width: 80rem;
+  }
+  .\32 xl\:max-w-4xl {
+    max-width: 90rem;
+  }
+  .\32 xl\:max-w-5xl {
+    max-width: 100rem;
+  }
+  .\32 xl\:max-w-6xl {
+    max-width: 110rem;
+  }
+  .\32 xl\:max-w-7xl {
+    max-width: 120rem;
+  }
+  .\32 xl\:max-w-8xl {
+    max-width: 130rem;
+  }
+  .\32 xl\:max-w-9xl {
+    max-width: 140rem;
+  }
+  .\32 xl\:max-w-10xl {
+    max-width: 150rem;
   }
   .\32 xl\:gutter-x-1 > * + * {
     --gutter-left: 1;
