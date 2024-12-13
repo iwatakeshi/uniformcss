@@ -43,6 +43,27 @@ $config: (
             max: max-content,
             
             text: 64ch,
+
+            xs: 20rem,
+            sm: 30rem,
+            md: 40rem,
+            lg: 50rem,
+            xl: 60rem,
+            "2xl": 70rem,
+            "3xl": 80rem,
+            "4xl": 90rem,
+            "5xl": 100rem,
+            "6xl": 110rem,
+            "7xl": 120rem,
+            "8xl": 130rem,
+            "9xl": 140rem,
+            "10xl": 150rem
+
+            "screen-sm": 640px,
+            "screen-md": 768px,
+            "screen-lg": 1024px,
+            "screen-xl": 1280px,
+            "screen-2xl": 1536px
           )
         )
       ),

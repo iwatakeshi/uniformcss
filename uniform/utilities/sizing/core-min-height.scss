@@ -46,7 +46,11 @@ $config: (
             25lvh: 25lvh,
             50lvh: 50lvh,
             75lvh: 75lvh,
-            100lvh: 100lvh
+            100lvh: 100lvh,
+
+            min: min-content,
+            max: max-content,
+            fit: fit-content,
           )
         )
       ),
