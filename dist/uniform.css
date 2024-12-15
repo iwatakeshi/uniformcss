@@ -283,6 +283,54 @@
     opacity: 1;
   }
 }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /*! purgecss end ignore */
 /*! Credits: modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*! purgecss start ignore */
@@ -14975,6 +15023,86 @@ select {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out;
+}
+
+.fade-down {
+  animation: fade-down 0.6s ease-out;
+}
+
+.fade-left {
+  animation: fade-left 0.6s ease-out;
+}
+
+.fade-right {
+  animation: fade-right 0.6s ease-out;
+}
+
+.fade-in-cubic {
+  animation: fade-in 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-up-cubic {
+  animation: fade-up 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-down-cubic {
+  animation: fade-down 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-left-cubic {
+  animation: fade-left 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-right-cubic {
+  animation: fade-right 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-in-back {
+  animation: fade-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-up-back {
+  animation: fade-up 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-down-back {
+  animation: fade-down 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-left-back {
+  animation: fade-left 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-right-back {
+  animation: fade-right 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-in-expo {
+  animation: fade-in 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.fade-up-expo {
+  animation: fade-up 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.fade-down-expo {
+  animation: fade-down 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.fade-left-expo {
+  animation: fade-left 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.fade-right-expo {
+  animation: fade-right 0.6s cubic-bezier(1, 0, 0, 1);
 }
 
 @media (min-width: 640px) {

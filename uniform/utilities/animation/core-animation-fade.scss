@@ -1,0 +1,50 @@
+@use "../../core";
+@use "sass:map";
+
+$easings: map.get(core.$all-config, easings);
+
+$config: (
+  utilities: (
+    fade: (
+      important: false,
+      shorthand: fade,
+      responsive: false,
+      responsive-pseudos: false,
+      extra-selector: null,
+      properties: (animation),
+      static-properties: (),
+      variants: (
+        // Basic animations with standard easing
+        in: fade-in 0.6s map.get($easings, ease-out),
+        up: fade-up 0.6s map.get($easings, ease-out),
+        down: fade-down 0.6s map.get($easings, ease-out),
+        left: fade-left 0.6s map.get($easings, ease-out),
+        right: fade-right 0.6s map.get($easings, ease-out),
+
+        // Cubic variations
+        'in-cubic': fade-in 0.6s map.get($easings, ease-in-out-cubic),
+        'up-cubic': fade-up 0.6s map.get($easings, ease-in-out-cubic),
+        'down-cubic': fade-down 0.6s map.get($easings, ease-in-out-cubic),
+        'left-cubic': fade-left 0.6s map.get($easings, ease-in-out-cubic),
+        'right-cubic': fade-right 0.6s map.get($easings, ease-in-out-cubic),
+
+        // Back variations  
+        'in-back': fade-in 0.6s map.get($easings, ease-in-out-back),
+        'up-back': fade-up 0.6s map.get($easings, ease-in-out-back),
+        'down-back': fade-down 0.6s map.get($easings, ease-in-out-back),
+        'left-back': fade-left 0.6s map.get($easings, ease-in-out-back),
+        'right-back': fade-right 0.6s map.get($easings, ease-in-out-back),
+
+        // Expo variations
+        'in-expo': fade-in 0.6s map.get($easings, ease-in-out-expo),
+        'up-expo': fade-up 0.6s map.get($easings, ease-in-out-expo),
+        'down-expo': fade-down 0.6s map.get($easings, ease-in-out-expo),
+        'left-expo': fade-left 0.6s map.get($easings, ease-in-out-expo),
+        'right-expo': fade-right 0.6s map.get($easings, ease-in-out-expo)
+      ),
+      pseudos: (none)
+    )
+  )
+);
+
+core.$all-config: map.deep-merge(core.$all-config, $config);
